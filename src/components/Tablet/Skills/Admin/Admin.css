@@ -1,0 +1,89 @@
+.container-tablet{
+  padding: 0px;
+  margin-left: 0px;
+}
+ 
+.sub-skill-1-tablet {
+  width: 300px;
+  height: 200px;
+  outline-offset: -2px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: initial;
+  color: #999;
+}
+
+.inner-sub-skill-1-content-tablet {
+  width: 250px;
+}
+
+.inner-sub-skill-1-header-tablet{
+  margin: 4px;
+}
+
+.sub-skill-2-tablet {
+  width: 300px;
+  height: 200px;
+  outline-offset: -2px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: initial;
+}
+
+.inner-sub-skill-2-content-tablet {
+  width: 250px;
+}
+
+.inner-sub-skill-2-header-tablet{
+  margin: 4px;
+}
+
+.sub-skill-3-tablet {
+  width: 300px;
+  height: 200px;
+  outline-offset: -2px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0 0 0 0;
+  vertical-align: top;
+  text-align: initial;
+}
+
+.inner-sub-skill-3-content-tablet {
+  width: 250px;
+}
+
+.inner-sub-skill-3-header-tablet{
+  margin: 4px;
+}
+
+.sub-skill-4-tablet {
+  width: 300px;
+  height: 200px;
+  outline-offset: -2px;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: initial;
+}
+
+.inner-sub-skill-4-content-tablet {
+  width: 250px;
+}
+
+.inner-sub-skill-4-header-tablet{
+  margin: 4px;
+}

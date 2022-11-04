@@ -1,0 +1,8 @@
+div#logo {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+  vertical-align: top;
+}
