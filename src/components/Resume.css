@@ -1,0 +1,189 @@
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #a4d4df;
+}
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.topHalf {
+  display: block;
+  height: 91%;
+  background-color: #FFF;
+  overflow: scroll;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 10px;
+  flex: 0 1 auto;
+}
+
+.contents {
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 1 40px;
+  text-align: right;
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom:0;
+}
+
+.title {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  height: 40px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titlePadding {
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+span {
+  padding: 0px 10px 0px 0px;
+}
+
+.itemSkill {
+  background-color: #a4d4df;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active, .itemSkill:hover  {
+  background-color: #bce2eb;
+}
+
+.itemEdu {
+  background-color: #91c3cf;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active, .itemEdu:hover  {
+  background-color: #bce2eb;
+}
+
+.itemPort {
+  background-color: #85b5c0;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active, .itemPort:hover  {
+  background-color: #bce2eb;
+}
+
+.itemJob {
+  background-color: #7da9b4;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.active, .itemJob:hover  {
+  background-color: #bce2eb;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #444444;
+  font-size: 16px;
+  max-height: 0;
+  font-weight: normal;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.showSkill {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-height: 999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.content.showEdu {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.content.showPort {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.content.showJob {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
