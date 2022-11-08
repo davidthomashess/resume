@@ -9,7 +9,7 @@ const Admin = () => {
         </div>
         <div class="inner-sub-skill-1-content-tablet">
           <ul>
-            <li>[Tablet] and more details</li>
+            <li>[Tablettttt] and more details</li>
             <li>Some more details</li>
             <li>And details again</li>
             <li>D e t a i l s a n d m o r e d e t a </li>
