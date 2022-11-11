@@ -4,11 +4,11 @@
 
 <h2>Definition of Done</h2>
 <ol>
-  <li>Setup resume repo</li>
+  <li><del>Setup resume repo</del></li>
   <li>Create Web Server</li>
   <ol type="A">
     <li>Spin up Ubuntu web server on DigitalOcean with npm react installed</li>
-    <li>Register "dthess" as a domain</li>
+    <li><del>Register "davidthess" as a domain</del></li>
     <li>Setup a CI/CD pipeline to deploy to resume web server</li>
   </ol>
   <li>Resume webpage</li>

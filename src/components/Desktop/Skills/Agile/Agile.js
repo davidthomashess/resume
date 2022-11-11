@@ -1,13 +1,13 @@
 import './Agile.css'
 
 const Agile = () => {
-  return <div class="container">
-  <div class="inner-container">
-      <div class="sub-skill-1">
-        <div class="inner-sub-skill-1-header">
+  return <div className="container">
+  <div className="inner-container">
+      <div className="sub-skill-1">
+        <div className="inner-sub-skill-1-header">
           <h2>Agile</h2>
         </div>
-        <div class="inner-sub-skill-1-content">
+        <div className="inner-sub-skill-1-content">
           <ul>
             <li>Details and more details</li>
             <li>Some more details</li>
@@ -18,11 +18,11 @@ const Agile = () => {
           </ul>
         </div>
       </div>
-      <div class="sub-skill-2">
-        <div class="inner-sub-skill-2-header">
+      <div className="sub-skill-2">
+        <div className="inner-sub-skill-2-header">
           <h2>Skill</h2>
         </div>
-        <div class="inner-sub-skill-2-content">
+        <div className="inner-sub-skill-2-content">
           <ul>
             <li>Details and more details</li>
             <li>Some more details</li>
@@ -33,11 +33,11 @@ const Agile = () => {
           </ul>
         </div>
       </div>
-      <div class="sub-skill-3">
-        <div class="inner-sub-skill-3-header">
+      <div className="sub-skill-3">
+        <div className="inner-sub-skill-3-header">
           <h2>Skill</h2>
         </div>
-        <div class="inner-sub-skill-3-content">
+        <div className="inner-sub-skill-3-content">
           <ul>
             <li>Details and more details</li>
             <li>Some more details</li>
@@ -48,11 +48,11 @@ const Agile = () => {
           </ul>
         </div>
       </div>
-      <div class="sub-skill-4">
-        <div class="inner-sub-skill-4-header">
+      <div className="sub-skill-4">
+        <div className="inner-sub-skill-4-header">
           <h2>Skill</h2>
         </div>
-        <div class="inner-sub-skill-4-content">
+        <div className="inner-sub-skill-4-content">
           <ul>
             <li>Details and more details</li>
             <li>Some more details</li>
