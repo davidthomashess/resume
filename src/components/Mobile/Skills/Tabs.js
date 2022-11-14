@@ -11,7 +11,7 @@ class Tabs extends Component {
     super(props)
     
     this.state = {
-      activeTabe: this.props.children[0]
+      activeTab: this.props.children[0]
     }
   }
   
@@ -35,15 +35,29 @@ class Tabs extends Component {
         <div className="innerContentButtons">
           <ul className="listSkills">
             {children.map((child) => {
-              const { label } = child.props
+              const { label1 } = child.props
               
               return (
                 <Tab
                   activeTab={activeTab}
-                  key={label}
-                  label={label}
+                  key={label1}
+                  label={label1}
                   onClick={onClickTabItem}
                 />
+                
+              )
+            })}
+            {children.map((child) => {
+              const { label2 } = child.props
+              
+              return (
+                <Tab
+                  activeTab={activeTab}
+                  key={label2}
+                  label={label2}
+                  onClick={onClickTabItem}
+                />
+                
               )
             })}
           </ul>
