@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div>
       <div>
-        <b>[Mobile] Texas A&#38;M University-San Antonio, San Antonio, Texas</b>
+        <b>[Tablet] Texas A&#38;M University-San Antonio, San Antonio, Texas</b>
         <p>BAAS Information Technology - ERP | Summa Cum Laude 2015</p>
       </div>
       <div>

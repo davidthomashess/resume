@@ -2,7 +2,7 @@
   display: block;
   padding-left: 0px;
   padding-right: 0px;
-  margin: 0;
+  margin: 2px 18px 2px 3px;
   white-space: nowrap;
 }
 
@@ -32,7 +32,7 @@
 
 .skillButton-tablet {
   display: inline-block;
-  border: 1px dotted;
+  border: 2px #FFF solid;
   margin: 0;
   padding-top: 20px;
   background-color: none;
