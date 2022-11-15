@@ -119,7 +119,7 @@ const Resume = () => {
             <div className="itemPort">
               <div className="title" onClick={() => togglePort("port")}>
                 <div className="titlePadding">
-                  <h2>PORTFOLIO</h2>
+                  <h2>APPS</h2>
                 </div>
                 <span>{selectedPort === "port" ? "-" : "+"}</span>
               </div>
