@@ -1,89 +1,53 @@
-.container-mobile{
+.container-mobile {
   padding: 0px;
   margin-left: 0px;
 }
+
+.inner-container-mobile {
+  width: 100vw;
+  float: left;
+  clear: none;
+}
+
+.blocks { 
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skill-button-back {
+  background-color: red;
+  width: 10%;
+  height: 200px;
+}
+
+.skill-button {
+  width: 12%;
+  padding-top: 70px;
+  height: 130px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.disabled {
+  color: #DDD;
+  cursor: default;
+}
  
-.sub-skill-1-mobile {
-  width: 300px;
+.sub-skill-mobile {
   height: 200px;
-  outline-offset: -2px;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  text-align: initial;
-  color: #999;
+  width: 76%;
 }
 
-.inner-sub-skill-1-content-mobile {
-  width: 250px;
-}
-
-.inner-sub-skill-1-header-mobile{
-  margin: 4px;
-}
-
-.sub-skill-2-mobile {
+.inner-sub-skill-content-mobile {
   width: 300px;
-  height: 200px;
-  outline-offset: -2px;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  text-align: initial;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.inner-sub-skill-2-content-mobile {
-  width: 250px;
-}
-
-.inner-sub-skill-2-header-mobile{
-  margin: 4px;
-}
-
-.sub-skill-3-mobile {
+.inner-sub-skill-header-mobile{
   width: 300px;
-  height: 200px;
-  outline-offset: -2px;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  margin: 0;
-  padding: 0 0 0 0;
-  vertical-align: top;
-  text-align: initial;
-}
-
-.inner-sub-skill-3-content-mobile {
-  width: 250px;
-}
-
-.inner-sub-skill-3-header-mobile{
-  margin: 4px;
-}
-
-.sub-skill-4-mobile {
-  width: 300px;
-  height: 200px;
-  outline-offset: -2px;
-  display: inline-block;
-  position: relative;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  text-align: initial;
-}
-
-.inner-sub-skill-4-content-mobile {
-  width: 250px;
-}
-
-.inner-sub-skill-4-header-mobile{
-  margin: 4px;
+  padding-left: 40px;
+  padding-right: 20px;
 }
