@@ -4,7 +4,7 @@ const Job = () => {
   return (
     <div>
       <div>
-        <b>[Mobile] AFS, San Antonio, TX</b>
+        <b>[Tablet] AFS, San Antonio, TX</b>
         <p>System Developer Analyst July 2017 - Present</p>
         <p>&#8226; Monitor kafka and OpenShift resources for abnormailities and report issues that occur while working towards solutions to resolve those issues.</p>
         <p>&#8226; Use SQl to monitor databases for issues to investigate.</p>
