@@ -1,0 +1,13 @@
+.content-app {
+  margin-top: 4px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  width: 100vw;
+  cursor: default;
+}
+
+.col {
+  padding-left: 10vw;
+  width: 23.33vw;
+  display: inline-block;
+}

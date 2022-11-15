@@ -1,22 +1,31 @@
+import Calculator from './Calculator/Calculator'
+
 import './Portfolio.css'
 
 const Portfolio = () => {
   return (
-    <div className="contentport">
-      <h3>App 1</h3>
+    <div className="content-app">
+      <div className="col">
+        <h3>iPhone Calculator</h3>
+        <Calculator />
+      </div>
+      <div className="col">
+        <h3>Color Picker</h3>
         <p>
-          I built this and that and this whateva.
+          I mastered how to 
         </p>
-        
-        <h3>App 2</h3>
-        <p>
-          I mastered how to do you know what it is that I am able to do.
-        </p>
-        
-        <h3>App 3</h3>
+      </div>
+      <div className="col">
+        <h3>Tic-Tac-Toe</h3>
         <p>
           Na na na na na.
         </p>
+      </div>
+      
+      
+      
+      
+      
     </div>
   )
 }
