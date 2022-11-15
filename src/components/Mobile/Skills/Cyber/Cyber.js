@@ -1,11 +1,11 @@
-import './Testing.css'
+import './Cyber.css'
 
-const Testing = () => {
+const Cyber = () => {
   return <div className="container">
-    <div className="inner-container">
+  <div className="inner-container">
       <div className="sub-skill-1">
         <div className="inner-sub-skill-1-header">
-          <h2>Testing</h2>
+          <h2>Cyber</h2>
         </div>
         <div className="inner-sub-skill-1-content">
           <ul>
@@ -67,4 +67,4 @@ const Testing = () => {
   </div>
 }
 
-export default Testing
+export default Cyber

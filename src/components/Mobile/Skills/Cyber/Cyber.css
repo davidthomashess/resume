@@ -17,7 +17,7 @@
 }
 
 .innerContentContent {
-  border: 1px dashed;
+  border: 0px dashed;
   width: 88.652%;
   margin-left: 10px;
   display: inline-block;
@@ -58,7 +58,7 @@
   
   cursor: pointer;
   width: 150px;
-  height: 56px;
+  height: 50px;
 }
 
 .tab-list-active {
