@@ -1,128 +1,70 @@
-import React, { useState } from 'react'
-
 import './Admin.css'
 
-// const data = require('../../../Contents/skills.json')
-
-const skillBuilder = (title, skills) => {
-  return (
-    <div className="sub-skill-mobile blocks">
-      <div className="inner-sub-skill-header-mobile">
-        <h2>{title}</h2>
-      </div>
-      <div className="inner-sub-skill-content-mobile">
-        <ul>
-          {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
-          {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
-          {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
-          {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
-        </ul>
-      </div>
-    </div>
-  )
-}
-
 const Admin = () => {
-  const subSkill1 = () => {
-    setCard(firstSkill())
-  }
-  
-  const subSkill2 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
-        
-        {skillBuilder(
-          "Prisma Cloud",
-          [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
-          ]
-        )}
-        
-        <div className="skill-button blocks" onClick={subSkill3}>{`>`}</div>
+  return <div className="container-mobile">
+  <div className="inner-container-mobile">
+      <div className="sub-skill-1-mobile">
+        <div className="inner-sub-skill-1-header-mobile">
+          <h2>Admin</h2>
+        </div>
+        <div className="inner-sub-skill-1-content-mobile">
+          <ul>
+            <li>[Tablettttt] and more details</li>
+            <li>Some more details</li>
+            <li>And details again</li>
+            <li>D e t a i l s a n d m o r e d e t a </li>
+            <li>Some more details</li>
+            <li>And details again</li>
+          </ul>
+        </div>
       </div>
-    )
-  }
-  
-  const subSkill3 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
-        
-        {skillBuilder(
-          "Dockerfile",
-          [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
-          ]
-        )}
-        
-        <div className="skill-button blocks" onClick={subSkill4}>{`>`}</div>
+      <div className="sub-skill-2-mobile">
+        <div className="inner-sub-skill-2-header-mobile">
+          <h2>Skill</h2>
+        </div>
+        <div className="inner-sub-skill-2-content-mobile">
+          <ul>
+            <li>Details and more details</li>
+            <li>Some more details</li>
+            <li>And details again</li>
+            <li>D e t a i l s a n d m o r e d e t a </li>
+            <li>Some more details</li>
+            <li>And details again</li>
+          </ul>
+        </div>
       </div>
-    )
-  }
-  
-  const subSkill4 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
-          
-        {skillBuilder(
-          "OC Pipeline",
-          [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
-          ]
-        )}
-          
-        <div className="skill-button disabled blocks" disabled>{`>`}</div>
+      <div className="sub-skill-3-mobile">
+        <div className="inner-sub-skill-3-header-mobile">
+          <h2>Skill</h2>
+        </div>
+        <div className="inner-sub-skill-3-content-mobile">
+          <ul>
+            <li>Details and more details</li>
+            <li>Some more details</li>
+            <li>And details again</li>
+            <li>D e t a i l s a n d m o r e d e t a </li>
+            <li>Some more details</li>
+            <li>And details again</li>
+          </ul>
+        </div>
       </div>
-    )
-  }
-  
-  const firstSkill = () => {
-    return (
-      <div>
-        <div className="skill-button disabled blocks" disabled>{`<`}</div>
-        
-        {skillBuilder(
-          "OpenShift",
-          [
-            "Antlion",
-            "b",
-            "c"
-          ]
-        )}
-        
-        <div className="skill-button blocks" onClick={subSkill2}>{`>`}</div>
+      <div className="sub-skill-4-mobile">
+        <div className="inner-sub-skill-4-header-mobile">
+          <h2>Skill</h2>
+        </div>
+        <div className="inner-sub-skill-4-content-mobile">
+          <ul>
+            <li>Details and more details</li>
+            <li>Some more details</li>
+            <li>And details again</li>
+            <li>D e t a i l s a n d m o r e d e t a </li>
+            <li>Some more details</li>
+            <li>And details again</li>
+          </ul>
+        </div>
       </div>
-    )
-  }
-  
-  const [card, setCard] = useState(firstSkill())
-  
-  return (
-  <div className="container-mobile">
-    <div className="inner-container-mobile">
-      {card}
     </div>
   </div>
-  )
 }
 
 export default Admin
