@@ -1,162 +1,263 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 
 import './Calculator.css'
 
+const errors = {
+  overflow: "Overflow",
+  divZero: "No #/0"
+}
+
+let useThisNumTo = "0"
+let withThisNum = "0"
+let lockDis = false
+let operation = ""
+let switchDis = false
+
 const Calculator = () => {
-  /*
-  const maxChar = "TOO MUCH"
-  const [total, setTotal] = useState(0)
-  const [ac, setAc] = useState("AC")
-  const [operation, setOperation] = useState()
-  const [firstNumber, setFirstNumber] = useState(0)
-  const [secondNumber, setSecondNumber] = useState(firstNumber)
-  const [is2ndAct, setIs2ndAct] = useState(false)
-  
-  const firstNumPusher = (num) => {
-    if(firstNumber === 0) {
-      setFirstNumber(prevFirstNumber => prevFirstNumber+num)
-    }
-    
-    if(firstNumber !== 0) {
-      setFirstNumber(prevFirstNumber => prevFirstNumber*10+num)
-    }
-    
-    setTotal(prevTotal => prevTotal-prevTotal+firstNumber)
-  }
-  
-  
-  
-  const processTotal = () => {
-    setTotal(firstNumber + secondNumber)
-  }
+  const [display, setDisplay] = useState("0")
   
   const abilityAC = () => {
-    if(total.toString() === "0") {
-      setAc("AC")
-    }
-    
-    if(total.toString() !== "0") {
-      setAc("C")
-    }
+    setDisplay("0")
+    useThisNumTo = ""
+    withThisNum = ""
+    lockDis = false
+    operation = ""
   }
   
   const abilityPlusMinus = () => {
-    setTotal(prevTotal => ((-1)*(prevTotal)))
+    if(lockDis === false && withThisNum !== "0" && withThisNum !== "") {
+      withThisNum = (parseFloat(withThisNum)*(-1)).toString()
+      setDisplay(withThisNum)
+    }
   }
   
   const abilityPercent = () => {
-    setTotal(prevTotal => prevTotal*0.01)
+    if(lockDis === false) {
+      withThisNum = (parseFloat(withThisNum)*(0.01)).toString()
+      
+      let checkMaxString = withThisNum.toString().split('.').join("")
+      
+      if(checkMaxString.length > 8) {
+        lockDis = true
+        setDisplay(errors.overflow)
+      } else if(checkMaxString.length <= 8) {
+        setDisplay(withThisNum)
+      }
+    }
   }
   
-  
   const mathDivide = () => {
-    setOperation=("divide")
+    if(lockDis === false) {
+      if(operation !== "") {
+        mathEquals()
+      }
+      
+      useThisNumTo = withThisNum.toString()
+      
+      operation = "divide"
+      switchDis = true
+    }
   }
   
   const mathTimes = () => {
-    setOperation=("times")
+    if(lockDis === false) {
+      if(operation !== "") {
+        mathEquals()
+      }
+      
+      useThisNumTo = withThisNum.toString()
+      
+      operation = "times"
+      switchDis = true
+    }
   }
   
   const mathMinus = () => {
-    setOperation=("minus")
+    if(lockDis === false) {
+      if(operation !== "") {
+        mathEquals()
+      }
+      
+      useThisNumTo = withThisNum.toString()
+      
+      operation = "minus"
+      switchDis = true
+    }
   }
   
   const mathPlus = () => {
-    setOperation=("plus")
+    
+    if(lockDis === false) {
+      if(operation !== "") {
+        mathEquals()
+      }
+      
+      useThisNumTo = withThisNum.toString()
+      
+      operation = "plus"
+      switchDis = true
+    }
   }
   
   const mathEquals = () => {
-    if(operation === "divide") 
+    if(useThisNumTo === "") {
+      useThisNumTo = "0"
+    }
     
+    if(withThisNum === "") {
+      withThisNum = "0"
+    }
     
+    if(lockDis === false && operation !== "") {
+      if(operation === "divide") {
+        if(withThisNum === "0" || display === "0") {
+          lockDis = true
+          setDisplay("No #/0")
+        } else if(withThisNum !== "0") {
+          withThisNum = (parseFloat(useThisNumTo)/parseFloat(withThisNum)).toString()
+        }
+      }
+      
+      if(operation === "times") {
+        withThisNum = (parseFloat(useThisNumTo)*parseFloat(withThisNum)).toString()
+      }
+      
+      if(operation === "minus") {
+        withThisNum = (parseFloat(useThisNumTo)-parseFloat(withThisNum)).toString()
+      }
+      
+      if(operation === "plus") {
+        withThisNum = (parseFloat(useThisNumTo)+parseFloat(withThisNum)).toString()
+      }
+      
+      if(withThisNum.length > 8 || display.length > 8) {
+        lockDis = true
+        setDisplay("Overflow")
+      }
+      
+      if(lockDis === false) {
+        operation = ""
+        
+        setDisplay(withThisNum)
+        useThisNumTo = 0
+      }
+    }
   }
   
+  const displayHandler = (numString) => {
+    if(switchDis === true) {
+      withThisNum = "0"
+      setDisplay("0")
+      switchDis = false
+    }
+    
+    if(withThisNum === "0") {
+      withThisNum = ""
+    }
+    
+    let checkMaxString = (withThisNum + numString).toString()
+    
+    if(checkMaxString.length > 8) {
+      lockDis = true
+      setDisplay(errors.overflow)
+    }
+    
+    if(numString === "0" && withThisNum === "0" && lockDis === false) {
+      withThisNum = "0"
+      setDisplay("0")
+    }
+    
+    if(checkMaxString.length <= 8 && lockDis === false) {
+      withThisNum = withThisNum + numString.toString()
+      setDisplay(withThisNum.toString())
+    }
+  }
   
   const num0 = () => {
-    
+    displayHandler("0")
   }
   
   const num1 = () => {
-    
+    displayHandler("1")
   }
   
   const num2 = () => {
-    
+    displayHandler("2")
   }
   
   const num3 = () => {
-    
+    displayHandler("3")
   }
   
   const num4 = () => {
-    
+    displayHandler("4")
   }
   
   const num5 = () => {
-    
+    displayHandler("5")
   }
   
   const num6 = () => {
-    
+    displayHandler("6")
   }
   
   const num7 = () => {
-    
+    displayHandler("7")
   }
   
   const num8 = () => {
-    
+    displayHandler("8")
   }
   
   const num9 = () => {
-    
+    displayHandler("9")
   }
   
   
-  const numDecimal = () => {
-    
+  const decimal = () => {
+    displayHandler(".")
   }
-  */
+  
   
   
   return (
     <div className="calculator-body">
       <div className="field">
-        {/*total*/}0
+        {display}
       </div>
       
       <div className="row">
-        <div className="ability cell">{/*ac*/}AC</div>
-        <div className="ability cell">+/-</div>
-        <div className="ability cell">%</div>
-        <div className="math cell">÷</div>
+        <div className="ability cell" onClick={abilityAC}>{display === "0" ? "AC" : "C"}</div>
+        <div className="ability cell" onClick={abilityPlusMinus}>+/-</div>
+        <div className="ability cell" onClick={abilityPercent}>%</div>
+        <div className="math cell" onClick={mathDivide}>÷</div>
       </div>
       
       <div className="row">
-        <div className="num cell">7</div>
-        <div className="num cell">8</div>
-        <div className="num cell">9</div>
-        <div className="math cell">x</div>
+        <div className="num cell" onClick={num7}>7</div>
+        <div className="num cell" onClick={num8}>8</div>
+        <div className="num cell" onClick={num9}>9</div>
+        <div className="math cell" onClick={mathTimes}>x</div>
       </div>
       
       <div className="row">
-        <div className="num cell">4</div>
-        <div className="num cell">5</div>
-        <div className="num cell">6</div>
-        <div className="math cell">-</div>
+        <div className="num cell" onClick={num4}>4</div>
+        <div className="num cell" onClick={num5}>5</div>
+        <div className="num cell" onClick={num6}>6</div>
+        <div className="math cell" onClick={mathMinus}>-</div>
       </div>
       
       <div className="row">
-        <div className="num cell">1</div>
-        <div className="num cell">2</div>
-        <div className="num cell">3</div>
-        <div className="math cell">+</div>
+        <div className="num cell" onClick={num1}>1</div>
+        <div className="num cell" onClick={num2}>2</div>
+        <div className="num cell" onClick={num3}>3</div>
+        <div className="math cell" onClick={mathPlus}>+</div>
       </div>
       
       <div className="row">
-        <div className="num cellx2">0</div>
-        <div className="num cell">.</div>
-        <div className="math cell">=</div>
+        <div className="num cellx2" onClick={num0}>0</div>
+        <div className="num cell" onClick={decimal}>.</div>
+        <div className="math cell" onClick={mathEquals}>=</div>
       </div>
     </div>
   )
