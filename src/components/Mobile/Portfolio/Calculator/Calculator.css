@@ -1,11 +1,11 @@
-.desktop-calculator-body {
+.mobile-calculator-body {
   border-radius: 30px;
   padding: 6px;
   width: 176px;
   background-color: #000;
 }
 
-.desktop-field { 
+.mobile-field { 
   text-align: right;
   color: #FFF;
   font-size: 40px;
@@ -14,12 +14,12 @@
   padding-top: 40px;
 }
 
-.desktop-row {
+.mobile-row {
   font-size: 20px;
   cursor: pointer;
 }
 
-.desktop-cell {
+.mobile-cell {
   margin: 2px;
   padding-top: 9px;
   text-align: center;
@@ -30,7 +30,7 @@
   border-radius: 50%
 }
 
-.desktop-cellx2 {
+.mobile-cellx2 {
   margin: 2px;
   padding-top: 10px;
   padding-left: 17px;
@@ -41,41 +41,41 @@
   border-radius: 20px;
 }
 
-.desktop-ability {
+.mobile-ability {
   background-color: #9f9f9f;
   color: #000;
 }
 
-.desktop-ability:hover {
+.mobile-ability:hover {
   background-color: #cfcfcf;
 }
 
-.desktop-ability:active {
+.mobile-ability:active {
   background-color: #dfdfdf;
 }
 
-.desktop-math {
+.mobile-math {
   background-color: #ff9900;
   color: #FFF;
 }
 
-.desktop-math:hover {
+.mobile-math:hover {
   background-color: #ffcc99;
 }
 
-.desktop-math:active {
+.mobile-math:active {
   background-color: #ffffcc;
 }
 
-.desktop-num { 
+.mobile-num { 
   background-color: #333333;
   color: #FFF;
 }
 
-.desktop-num:hover {
+.mobile-num:hover {
   background-color: #999;
 }
 
-.desktop-num:active {
+.mobile-num:active {
   background-color: #ccc;
 }

@@ -1,11 +1,11 @@
-.desktop-calculator-body {
+.tablet-calculator-body {
   border-radius: 30px;
   padding: 6px;
   width: 176px;
   background-color: #000;
 }
 
-.desktop-field { 
+.tablet-field { 
   text-align: right;
   color: #FFF;
   font-size: 40px;
@@ -14,12 +14,12 @@
   padding-top: 40px;
 }
 
-.desktop-row {
+.tablet-row {
   font-size: 20px;
   cursor: pointer;
 }
 
-.desktop-cell {
+.tablet-cell {
   margin: 2px;
   padding-top: 9px;
   text-align: center;
@@ -30,7 +30,7 @@
   border-radius: 50%
 }
 
-.desktop-cellx2 {
+.tablet-cellx2 {
   margin: 2px;
   padding-top: 10px;
   padding-left: 17px;
@@ -41,41 +41,41 @@
   border-radius: 20px;
 }
 
-.desktop-ability {
+.tablet-ability {
   background-color: #9f9f9f;
   color: #000;
 }
 
-.desktop-ability:hover {
+.tablet-ability:hover {
   background-color: #cfcfcf;
 }
 
-.desktop-ability:active {
+.tablet-ability:active {
   background-color: #dfdfdf;
 }
 
-.desktop-math {
+.tablet-math {
   background-color: #ff9900;
   color: #FFF;
 }
 
-.desktop-math:hover {
+.tablet-math:hover {
   background-color: #ffcc99;
 }
 
-.desktop-math:active {
+.tablet-math:active {
   background-color: #ffffcc;
 }
 
-.desktop-num { 
+.tablet-num { 
   background-color: #333333;
   color: #FFF;
 }
 
-.desktop-num:hover {
+.tablet-num:hover {
   background-color: #999;
 }
 
-.desktop-num:active {
+.tablet-num:active {
   background-color: #ccc;
 }

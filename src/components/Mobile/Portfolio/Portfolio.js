@@ -1,22 +1,87 @@
+import React, { useState } from 'react'
+
+import Calculator from './Calculator/Calculator'
+
 import './Portfolio.css'
 
 const Portfolio = () => {
-  return (
-    <div className="contentport">
-      <h3>[Tablet] App 1</h3>
+  const [page, setPage] = useState()
+  
+  const active = 'active-tab-color-mobile appsButton-mobile'
+  const inactive = 'inactive-tab-color-mobile appsButton-mobile'
+  
+  const [calcActive, setCalcActive] = useState(inactive)
+  const [colorPickActive, setColorPickActive] = useState(inactive)
+  const [tictactoeActive, setTictactoeActive] = useState(inactive)
+  
+  const options = {
+    calc: "calc",
+    colorPick: "colorPick",
+    tictactoe: "tictactoe",
+  }
+  
+  const activeSwitcher = (option) => {
+    setCalcActive(() => option === options.calc ? active : inactive)
+    setColorPickActive(() => option === options.colorPick ? active : inactive)
+    setTictactoeActive(() => option === options.tictactoe ? active : inactive)
+  }
+  
+  const calc = () => {
+    activeSwitcher(options.calc)
+    setPage(
+      <div className="appsMobile-col">
+        <h3>iPhone Calculator</h3>
+        <div className="appsMobile-blockCenter"><Calculator /></div>
+      </div>
+    )
+  }
+  
+  const colorPick = () => {
+    activeSwitcher(options.colorPick)
+    setPage(
+      <div className="appsMobile-col">
+        <h3>Color Picker</h3>
         <p>
-          I built this and that and this whateva.
+          I mastered how to 
         </p>
-        
-        <h3>App 2</h3>
-        <p>
-          I mastered how to do you know what it is that I am able to do.
-        </p>
-        
-        <h3>App 3</h3>
+      </div>
+    )
+  }
+  
+  const tictactoe = () => {
+    activeSwitcher(options.tictactoe)
+    setPage(
+      <div className="appsMobile-col">
+        <h3>Tic-Tac-Toe</h3>
         <p>
           Na na na na na.
         </p>
+      </div>
+    )
+  }
+  
+  return (
+    <div className="mobile-content-apps">
+      <div className="appsInnerContentButtons-mobile">
+        <div className="appsButtons-rows-mobile">
+          <div className="appsPadding-mobile">
+            <div className={calcActive} onClick={calc}>Calculatoreeee</div>
+          </div>
+        </div>
+        <div className="appsButtons-rows-mobile">
+          <div className="appsPadding-mobile">
+            <div className={colorPickActive} onClick={colorPick}>Pick a Color</div>
+          </div>
+        </div>
+        <div className="appsButtons-rows-mobile">
+          <div className="appsPadding-mobile">
+            <div className={tictactoeActive} onClick={tictactoe}>Tic-Tac-Toe</div>
+          </div>
+        </div>
+        <div className="appsMobile-beCenter">
+          {page}
+        </div>
+      </div>
     </div>
   )
 }

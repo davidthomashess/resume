@@ -1,0 +1,89 @@
+.mobile-work-body {
+  text-align: center;
+  cursor: default;
+}
+
+.mobile-work-card {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-work-logos {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.mobile-work-title {
+  text-align: center;
+}
+
+.workMobile-justify-text {
+  margin-left: 20px;
+  padding-top: 10px;
+  background-color: yellow;
+  width: 150px;
+}
+
+.mobile-work-text {
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  background-color: red;
+  width: 300px;
+}
+
+.workMobile-ul-nobuff {
+  text-align: left;
+  margin-block-start: 2px;
+  white-space: normal;
+  width: 200px;
+}
+
+
+
+.workInnerContent-mobile {
+  margin: 2px 6px 2px 2px;
+}
+
+.workInnerContentButtons-mobile {
+  width: 100%
+}
+
+.workButtons-rows-mobile {
+  width: 100%
+}
+
+.workButton-mobile {
+  display: inline-block;
+  border: 2px #FFF solid;
+  margin: 0;
+  padding-top: 20px;
+  background-color: none;
+  background: none;
+  color: #fff;
+  
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  
+  cursor: pointer;
+  width: 100%;
+  height: 39px;
+}
+
+.active-tab-color-mobile {
+  background: #a4d4df;
+}
+
+.active, .active-tab-color-mobile:hover  {
+  background-color: #bce2eb;
+}
+
+.inactive-tab-color-mobile {
+  background: #888
+}
+
+.active, .inactive-tab-color-mobile:hover  {
+  background-color: #aaa;
+}

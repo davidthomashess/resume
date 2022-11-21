@@ -1,0 +1,43 @@
+.desktop-work-body {
+  padding-top: 15px;
+  text-align: center;
+  height: 400px;
+  cursor: default;
+}
+
+.desktop-work-card {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.desktop-logos {
+  margin-bottom: 0px;
+  width: 200px;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.desktop-work-title {
+  width: 300px;
+  padding-left: 10px;
+}
+
+.desktop-justify-text {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.desktop-work-text {
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+}
+
+.desktop-ul-nobuff {
+  margin-block-start: 2px;
+  width: 200px;
+}
+
+.desktop-role {
+  padding-left: 10px;
+}
