@@ -11,22 +11,7 @@ import Testing from './Testing/Testing'
 import Web from './Web/Web'
 
 import Tabs from './Tabs'
-
-// const setMobileView = (html) => {
-//   const nav = document.querySelector()
-// }
-
 const Skills = () => {
-  
-  // const thisOne = true
-  
-  // if(thisOne) {
-  //   return (
-  //     <div>
-  //       sausage
-  //     </div>
-  //   )
-  // }
   
   return (
     <div className="innerContent">
@@ -60,20 +45,6 @@ const Skills = () => {
       </div>
     </div>
   )
-  
-  /*
-    code
-    shell
-    git
-
-    agile
-    testing
-    sharepoint
-
-    data
-    admin
-    api
-  */
 }
 
 export default Skills
