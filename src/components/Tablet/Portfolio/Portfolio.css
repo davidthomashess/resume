@@ -1,0 +1,13 @@
+.tablet-content-app {
+  margin-top: 4px;
+  margin-bottom: 30px;
+  width: 100vw;
+  cursor: default;
+  text-align: center;
+}
+
+.tablet-col {
+  display: inline-block;
+  padding-left: 40px;
+  width: 190px;
+}

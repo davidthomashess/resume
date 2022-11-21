@@ -1,0 +1,43 @@
+.tablet-work-body {
+  padding-top: 15px;
+  text-align: center;
+  height: 400px;
+  cursor: default;
+}
+
+.tablet-work-card {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.tablet-logos {
+  margin-bottom: 0px;
+  width: 200px;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.tablet-work-title {
+  width: 300px;
+  padding-left: 10px;
+}
+
+.tablet-justify-text {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.tablet-work-text {
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  width: 250px;
+}
+
+.tablet-ul-nobuff {
+  margin-block-start: 2px;
+}
+
+.tablet-role {
+  padding-left: 10px;
+}

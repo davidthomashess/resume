@@ -1,0 +1,40 @@
+.tablet-edu-body {
+  padding-top: 15px;
+  height: 400px;
+  text-align: center;
+  cursor: default;
+}
+
+.tablet-edu-card {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.tablet-edu-logos {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.tablet-edu-px180 {
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-top: 8px;
+}
+
+.tablet-edu-text-group {
+  text-align: left;
+}
+
+.tablet-edu-text {
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+}
+
+.tablet-edu-title {
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+}
