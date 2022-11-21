@@ -1,21 +1,55 @@
 import './Job.css'
 
+import logoAFS from '../../../img/SVG/accenture.svg'
+import logoRH from '../../../img/SVG/rh.svg'
+
 const Job = () => {
   return (
-    <div>
-      <div>
-        <b>AFS, San Antonio, TX</b>
-        <p>System Developer Analyst July 2017 - Present</p>
-        <p>&#8226; Monitor kafka and OpenShift resources for abnormailities and report issues that occur while working towards solutions to resolve those issues.</p>
-        <p>&#8226; Use SQl to monitor databases for issues to investigate.</p>
-        <p>&#8226; Use terminal/CMD for both Linux and Windows to investigate causes of Kafka consumption/lag, OpenShift nodes and write scripts to automate processes for time optimizations and accuracy.
-          Drive to acquire new knowledge to apply to daily activities and to share via documentation and knowledge transfers.</p>
+    <div className="desktop-work-body">
+      <div className="desktop-work-card">
+        <div className="desktop-logos">
+          <img 
+            src={logoAFS} 
+            alt="Accenture Federal Services logo" 
+            width="160px" 
+            height="160px"
+          />
+        </div>
+        <div className="desktop-work-title">
+          <b>Accenture Federal Services</b>
+          <br />
+          <b>San Antonio, TX - 2017</b>
+        </div>
+        <div className="desktop-justify-text">
+          <p className="desktop-work-text role">Automation Test Scripter <b>(Present)</b></p>
+          <ul className="desktop-ul-nobuff">
+            <li className="desktop-work-text">Write Cypress automation test scripts to speed up QA.</li>
+            <li className="desktop-work-text">Run test scripts to assert deployments.</li>
+            <li className="desktop-work-text">Write minor fixes to application in React.</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <b>Robert Half Technology, San Antonio, Texas</b>
-        <p>SYSTEM TECHNICIAN (CONTRACT)</p>
-        <p>&#8226; Configure computer systems with system upgrades</p>
-        <p>&#8226; Disconnect, package and move workstations to new locations to setup for clients.</p>
+      <div className="desktop-work-card">
+        <div className="desktop-logos">
+            <img 
+              src={logoRH} 
+              alt="Robert Half logo" 
+              width="160px" 
+              height="160px"
+            />
+        </div>
+        <div className="desktop-work-title">
+          <b>Robert Half Technology</b>
+          <br />
+          <b>San Antonio, Texas - 2017</b>
+        </div>
+        <div className="desktop-justify-text">
+          <p className="desktop-work-text role">System Technician - Temp</p>
+          <ul className="desktop-ul-nobuff">
+          <li className="desktop-work-text">Configure computer systems with system upgrades</li>
+          <li className="desktop-work-text">Disconnect, package and move workstations to new locations to setup for clients.</li>
+          </ul>
+        </div>
       </div>
     </div>
   )
