@@ -106,8 +106,8 @@ const Skills = () => {
   }
   
   return (
-    <div className="innerContent-mobile">
-      <div className="innerContentButtons-mobile">
+    <div className="skillInnerContent-mobile">
+      <div className="skillInnerContentButtons-mobile">
         <div className="skillButtons-rows-mobile">
           <div className={codeActive} onClick={code}>Code</div>
           <div className={terminalActive} onClick={terminal}>Terminal</div>
@@ -124,8 +124,8 @@ const Skills = () => {
           <div className={gitActive} onClick={git}>Git</div>
           <div className={databaseActive} onClick={databases}>Database</div>
         </div>
-          {page}
-        </div>
+        {page}
+      </div>
     </div>
   )
 }
