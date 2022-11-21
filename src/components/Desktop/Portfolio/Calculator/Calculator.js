@@ -221,43 +221,43 @@ const Calculator = () => {
   
   
   return (
-    <div className="calculator-body">
-      <div className="field">
+    <div className="desktop-calculator-body">
+      <div className="desktop-field">
         {display}
       </div>
       
-      <div className="row">
-        <div className="ability cell" onClick={abilityAC}>{display === "0" ? "AC" : "C"}</div>
-        <div className="ability cell" onClick={abilityPlusMinus}>+/-</div>
-        <div className="ability cell" onClick={abilityPercent}>%</div>
-        <div className="math cell" onClick={mathDivide}>÷</div>
+      <div className="desktop-row">
+        <div className="desktop-ability desktop-cell" onClick={abilityAC}>{display === "0" ? "AC" : "C"}</div>
+        <div className="desktop-ability desktop-cell" onClick={abilityPlusMinus}>+/-</div>
+        <div className="desktop-ability desktop-cell" onClick={abilityPercent}>%</div>
+        <div className="desktop-math desktop-cell" onClick={mathDivide}>÷</div>
       </div>
       
-      <div className="row">
-        <div className="num cell" onClick={num7}>7</div>
-        <div className="num cell" onClick={num8}>8</div>
-        <div className="num cell" onClick={num9}>9</div>
-        <div className="math cell" onClick={mathTimes}>x</div>
+      <div className="desktop-row">
+        <div className="desktop-num desktop-cell" onClick={num7}>7</div>
+        <div className="desktop-num desktop-cell" onClick={num8}>8</div>
+        <div className="desktop-num desktop-cell" onClick={num9}>9</div>
+        <div className="desktop-math desktop-cell" onClick={mathTimes}>x</div>
       </div>
       
-      <div className="row">
-        <div className="num cell" onClick={num4}>4</div>
-        <div className="num cell" onClick={num5}>5</div>
-        <div className="num cell" onClick={num6}>6</div>
-        <div className="math cell" onClick={mathMinus}>-</div>
+      <div className="desktop-row">
+        <div className="desktop-num desktop-cell" onClick={num4}>4</div>
+        <div className="desktop-num desktop-cell" onClick={num5}>5</div>
+        <div className="desktop-num desktop-cell" onClick={num6}>6</div>
+        <div className="desktop-math desktop-cell" onClick={mathMinus}>-</div>
       </div>
       
-      <div className="row">
-        <div className="num cell" onClick={num1}>1</div>
-        <div className="num cell" onClick={num2}>2</div>
-        <div className="num cell" onClick={num3}>3</div>
-        <div className="math cell" onClick={mathPlus}>+</div>
+      <div className="desktop-row">
+        <div className="desktop-num desktop-cell" onClick={num1}>1</div>
+        <div className="desktop-num desktop-cell" onClick={num2}>2</div>
+        <div className="desktop-num desktop-cell" onClick={num3}>3</div>
+        <div className="desktop-math desktop-cell" onClick={mathPlus}>+</div>
       </div>
       
-      <div className="row">
-        <div className="num cellx2" onClick={num0}>0</div>
-        <div className="num cell" onClick={decimal}>.</div>
-        <div className="math cell" onClick={mathEquals}>=</div>
+      <div className="desktop-row">
+        <div className="desktop-num desktop-cellx2" onClick={num0}>0</div>
+        <div className="desktop-num desktop-cell" onClick={decimal}>.</div>
+        <div className="desktop-math desktop-cell" onClick={mathEquals}>=</div>
       </div>
     </div>
   )
