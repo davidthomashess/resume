@@ -65,7 +65,7 @@ const Portfolio = () => {
       <div className="appsInnerContentButtons-mobile">
         <div className="appsButtons-rows-mobile">
           <div className="appsPadding-mobile">
-            <div className={calcActive} onClick={calc}>Calculatoreeee</div>
+            <div className={calcActive} onClick={calc}>Calculator</div>
           </div>
         </div>
         <div className="appsButtons-rows-mobile">

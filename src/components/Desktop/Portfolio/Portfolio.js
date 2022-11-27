@@ -1,4 +1,5 @@
 import Calculator from './Calculator/Calculator'
+import ColorPicker from './ColorPicker/ColorPicker'
 
 import './Portfolio.css'
 
@@ -11,9 +12,7 @@ const Portfolio = () => {
       </div>
       <div className="desktop-col">
         <h3>Color Picker</h3>
-        <p>
-          I mastered how to 
-        </p>
+        <ColorPicker />
       </div>
       <div className="desktop-col">
         <h3>Tic-Tac-Toe</h3>
