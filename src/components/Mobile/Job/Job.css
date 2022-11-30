@@ -20,14 +20,12 @@
 .workMobile-justify-text {
   margin-left: 20px;
   padding-top: 10px;
-  background-color: yellow;
   width: 150px;
 }
 
 .mobile-work-text {
   margin-block-start: 2px;
   margin-block-end: 2px;
-  background-color: red;
   width: 300px;
 }
 
