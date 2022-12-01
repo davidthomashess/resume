@@ -30,6 +30,7 @@
 .mobile-input-row {
   border: 3px #777 solid;
   border-radius: 3px;
+  width: 25px;
   height: 17px;
   margin-top: 2px;
   margin-left: 3px;
