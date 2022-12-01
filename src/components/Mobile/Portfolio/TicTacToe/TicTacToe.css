@@ -1,16 +1,16 @@
-.desktop-difficulty { 
+.mobile-difficulty { 
   width: 176px;
   padding-bottom: 2px;
   font-weight: bold;
   font-size: 14pt;
 }
 
-.desktop-easy-med {
+.mobile-easy-med {
   background-color: #aaa;
   border-radius: 4px;
   cursor: pointer;
 }
-.desktop-easy {
+.mobile-easy {
   display: inline-block;
   background-color: #ccc;
   height: 30px;
@@ -20,23 +20,23 @@
   border-radius: 4px 0 0 4px;
   transition: 0.3s;
 }
-.desktop-easy:hover { 
+.mobile-easy:hover { 
   color: #eee;
   background-color: #666;
 }
-.desktop-med {
+.mobile-med {
   display: inline-block;
   height: 30px;
   line-height: 30px;
   width: 50%;
   text-align: center;
 }
-.desktop-med:hover { 
+.mobile-med:hover { 
   color: #eee;
   background-color: #272727;
 }
 
-.desktop-hard {
+.mobile-hard {
   color: #fff;
   background-color: #666;
   height: 30px;
@@ -47,13 +47,13 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.desktop-hard:hover { 
+.mobile-hard:hover { 
   color: #d20000;
   background-color: #000;
 }
 
 
-.desktop-xo-board {
+.mobile-xo-board {
   cursor: pointer;  
   margin-top: 4px;
 }

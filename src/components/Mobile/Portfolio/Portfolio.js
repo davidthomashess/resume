@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import Calculator from './Calculator/Calculator'
+import ColorPicker from './ColorPicker/ColorPicker'
+import TicTacToe from './TicTacToe/TicTacToe'
 
 import './Portfolio.css'
 
@@ -41,9 +43,7 @@ const Portfolio = () => {
     setPage(
       <div className="appsMobile-col">
         <h3>Color Picker</h3>
-        <p>
-          I mastered how to 
-        </p>
+        <div className="appsMobile-blockCenter"><ColorPicker /></div>
       </div>
     )
   }
@@ -53,9 +53,7 @@ const Portfolio = () => {
     setPage(
       <div className="appsMobile-col">
         <h3>Tic-Tac-Toe</h3>
-        <p>
-          Na na na na na.
-        </p>
+        <div className="appsMobile-blockCenter"><TicTacToe /></div>
       </div>
     )
   }

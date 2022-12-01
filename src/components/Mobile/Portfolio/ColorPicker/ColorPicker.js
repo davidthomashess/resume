@@ -13,7 +13,7 @@ const ColorPicker = () => {
   const [hexInputSwitch, setHexInputSwitch] = useState(800)
   
   useEffect(() => {
-    let newBgColor = document.getElementsByClassName("desktopColorDisplay")
+    let newBgColor = document.getElementsByClassName("mobileColorDisplay")
     for(let i = 0; i < newBgColor.length; i++) {
       newBgColor[i].style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`
     }
@@ -93,24 +93,24 @@ const ColorPicker = () => {
   console.log(document.body.style.backgroundColor);
   
   return (
-    <div className="desktop-contains-colorPicker">
-      <div id="theDisplay" className="desktopColorDisplay">
+    <div className="mobile-contains-colorPicker">
+      <div id="theDisplay" className="mobileColorDisplay">
         
       </div>
-      <div className="desktop-slidecontainer">
-        <div className="desktop-rowItem">
-          <input className="desktop-slider desktop-slider-red"
+      <div className="mobile-slidecontainer">
+        <div className="mobile-rowItem">
+          <input className="mobile-slider mobile-slider-red"
             type="range" 
             min="0"
             max="255"
             value={rgb[0]}
-            id="desktop-redRange"
+            id="mobile-redRange"
             onChange={redText} 
           />
         </div>
-        <div className="desktop-rowItem">
+        <div className="mobile-rowItem">
           <input
-            className="desktop-input-row" 
+            className="mobile-input-row" 
             type="text" 
             maxLength="3" 
             size="3" 
@@ -120,20 +120,20 @@ const ColorPicker = () => {
           />
         </div>
       </div>
-      <div className="desktop-slidecontainer">
-        <div className="desktop-rowItem">
-          <input className="desktop-slider desktop-slider-green"
+      <div className="mobile-slidecontainer">
+        <div className="mobile-rowItem">
+          <input className="mobile-slider mobile-slider-green"
             type="range" 
             min="0" 
             max="255"
             value={rgb[1]}
-            id="desktop-greenRange"
+            id="mobile-greenRange"
             onChange={greenText} 
           />
         </div>
-        <div className="desktop-rowItem">
+        <div className="mobile-rowItem">
           <input 
-            className="desktop-input-row" 
+            className="mobile-input-row" 
             type="text" 
             maxLength="3" 
             size="3" 
@@ -143,20 +143,20 @@ const ColorPicker = () => {
           />
         </div>
       </div>
-      <div className="desktop-slidecontainer">
-        <div className="desktop-rowItem">
-          <input className="desktop-slider desktop-slider-blue"
+      <div className="mobile-slidecontainer">
+        <div className="mobile-rowItem">
+          <input className="mobile-slider mobile-slider-blue"
             type="range" 
             min="0" 
             max="255"
             value={rgb[2]}
-            id="desktop-blueRange"
+            id="mobile-blueRange"
             onChange={blueText} 
           />
         </div>
-        <div className="desktop-rowItem">
+        <div className="mobile-rowItem">
           <input 
-            className="desktop-input-row" 
+            className="mobile-input-row" 
             type="text" 
             maxLength="3" 
             value={rgb[2]}
@@ -166,13 +166,13 @@ const ColorPicker = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="mobile-submitItem">
         <input 
-          className="desktop-hex-io"
+          className="mobile-hex-io"
           value={hexColor}
           onChange={val => HexColorAndHexDelayOn(val.target.value)}
         />
-        <input className="desktop-cp-button" type="button" onClick={() =>  navigator.clipboard.writeText(`#${hexes[0]}${hexes[1]}${hexes[2]}`)} value="copy" />
+        <input className="mobile-cp-button" type="button" onClick={() =>  navigator.clipboard.writeText(`#${hexes[0]}${hexes[1]}${hexes[2]}`)} value="copy" />
       </div>
     </div>
   )

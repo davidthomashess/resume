@@ -9,17 +9,17 @@ const choices = '71px'
 
 const TicTacToe = () => {
   return (
-    <div className="desktop-xo-body">
+    <div className="mobile-xo-body">
       
-      <div className="desktop-difficulty">
-        <div className="desktop-easy-med">
-          <div className="desktop-easy">╒EASY</div>
-          <div className="desktop-med">FAIR╛</div>
+      <div className="mobile-difficulty">
+        <div className="mobile-easy-med">
+          <div className="mobile-easy">╒EASY</div>
+          <div className="mobile-med">FAIR╛</div>
         </div>
-        <div className="desktop-hard">═╡BRUTAL╞═</div>
+        <div className="mobile-hard">═╡BRUTAL╞═</div>
       </div>
       
-      <div className="desktop-xo-board">
+      <div className="mobile-xo-board">
         <div className="row-1">
           <div className="row-1-col-a">
             <span className="vCenter">

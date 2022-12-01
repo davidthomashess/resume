@@ -1,16 +1,16 @@
-.desktop-difficulty { 
+.tablet-difficulty { 
   width: 176px;
   padding-bottom: 2px;
   font-weight: bold;
   font-size: 14pt;
 }
 
-.desktop-easy-med {
+.tablet-easy-med {
   background-color: #aaa;
   border-radius: 4px;
   cursor: pointer;
 }
-.desktop-easy {
+.tablet-easy {
   display: inline-block;
   background-color: #ccc;
   height: 30px;
@@ -20,23 +20,23 @@
   border-radius: 4px 0 0 4px;
   transition: 0.3s;
 }
-.desktop-easy:hover { 
+.tablet-easy:hover { 
   color: #eee;
   background-color: #666;
 }
-.desktop-med {
+.tablet-med {
   display: inline-block;
   height: 30px;
   line-height: 30px;
   width: 50%;
   text-align: center;
 }
-.desktop-med:hover { 
+.tablet-med:hover { 
   color: #eee;
   background-color: #272727;
 }
 
-.desktop-hard {
+.tablet-hard {
   color: #fff;
   background-color: #666;
   height: 30px;
@@ -47,13 +47,13 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.desktop-hard:hover { 
+.tablet-hard:hover { 
   color: #d20000;
   background-color: #000;
 }
 
 
-.desktop-xo-board {
+.tablet-xo-board {
   cursor: pointer;  
   margin-top: 4px;
 }
