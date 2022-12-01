@@ -1,8 +1,8 @@
-.desktop-contains-colorPicker {
+.tablet-contains-colorPicker {
   width: 200px;
 }
 
-.desktopColorDisplay {
+.tabletColorDisplay {
   width: 190px;
   height: 145px;
   background-color: rgb(255, 0, 0);
@@ -11,19 +11,19 @@
   margin-bottom: 28px;
 }
 
-.desktop-slidecontainer {
+.tablet-slidecontainer {
   width: 190px;
   display: inline-block;
 }
 
-.desktop-rowItem {
+.tablet-rowItem {
   vertical-align: middle;
   height: 40px;
   display: inline-block;
   
 }
 
-.desktop-input-row {
+.tablet-input-row {
   border: 3px #777 solid;
   border-radius: 3px;
   height: 17px;
@@ -31,7 +31,7 @@
   margin-left: 3px;
 }
 
-.desktop-input-row:hover {
+.tablet-input-row:hover {
   border: 3px #222 solid;
   border-radius: 3px;
   height: 17px;
@@ -39,7 +39,7 @@
   margin-left: 3px;
 }
 
-.desktop-hex-io {
+.tablet-hex-io {
   border: 3px #777 solid;
   border-radius: 3px;
   height: 17px;
@@ -48,13 +48,13 @@
   font-weight: bold;
 }
 
-.desktop-hex-io:hover {
+.tablet-hex-io:hover {
   border: 3px #222 solid;
   border-radius: 3px;
   height: 17px;
 }
 
-.desktop-cp-button {
+.tablet-cp-button {
   border: 3px #555 solid;
   color: #555;
   font-weight: bold;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-.desktop-cp-button:hover {
+.tablet-cp-button:hover {
   border: 3px #222 solid;
   color: #222;
   font-weight: bold;
@@ -99,7 +99,7 @@
     100%{background-position:0% 50%}
 }
 
-.desktop-cp-button:active {
+.tablet-cp-button:active {
   border: 3px #000 solid;
   color: #000;
   font-weight: bold;
@@ -132,25 +132,25 @@
     100%{background-position:0% 50%}
 }
 
-.desktop-slider-red {
+.tablet-slider-red {
   background-color: red;
 }
 
-.desktop-slider-green {
+.tablet-slider-green {
   background-color: green;
 }
 
-.desktop-slider-blue {
+.tablet-slider-blue {
   background-color: blue;
 }
 
-.desktop-rgb-align {
+.tablet-rgb-align {
   border: 4px red solid;
   width: 30px;
   padding-bottom: 20px;
 }
 
-.desktop-slider {
+.tablet-slider {
   -webkit-appearance: none;
   position: relative;
   width: 147px;
@@ -162,11 +162,11 @@
   transition: opacity .2s;
 }
 
-.desktop-slider:hover {
+.tablet-slider:hover {
   opacity: 1;
 }
 
-.desktop-slider::-webkit-slider-thumb {
+.tablet-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 2px;
@@ -176,7 +176,7 @@
   cursor: pointer;
 }
 
-.desktop-slider::-moz-range-thumb {
+.tablet-slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   background: #04AA6D;
