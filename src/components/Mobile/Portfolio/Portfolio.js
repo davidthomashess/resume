@@ -71,11 +71,11 @@ const Portfolio = () => {
             <div className={colorPickActive} onClick={colorPick}>Pick a Color</div>
           </div>
         </div>
-        <div className="appsButtons-rows-mobile">
+        {/* <div className="appsButtons-rows-mobile">
           <div className="appsPadding-mobile">
             <div className={tictactoeActive} onClick={tictactoe}>Tic-Tac-Toe</div>
           </div>
-        </div>
+        </div> */}
         <div className="appsMobile-beCenter">
           {page}
         </div>

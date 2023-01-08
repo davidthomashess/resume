@@ -15,10 +15,10 @@ const Portfolio = () => {
         <h3>Color Picker</h3>
         <ColorPicker />
       </div>
-      <div className="tablet-col">
+      {/* <div className="tablet-col">
         <h3>Tic-Tac-Toe</h3>
         <TicTacToe />
-      </div>
+      </div> */}
     </div>
   )
 }
