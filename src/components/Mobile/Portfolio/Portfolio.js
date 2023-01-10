@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import Calculator from './Calculator/Calculator'
 import ColorPicker from './ColorPicker/ColorPicker'
-import TicTacToe from './TicTacToe/TicTacToe'
+// import TicTacToe from './TicTacToe/TicTacToe'
 
 import './Portfolio.css'
 
@@ -14,7 +14,7 @@ const Portfolio = () => {
   
   const [calcActive, setCalcActive] = useState(inactive)
   const [colorPickActive, setColorPickActive] = useState(inactive)
-  const [tictactoeActive, setTictactoeActive] = useState(inactive)
+  // const [tictactoeActive, setTictactoeActive] = useState(inactive)
   
   const options = {
     calc: "calc",
@@ -25,7 +25,7 @@ const Portfolio = () => {
   const activeSwitcher = (option) => {
     setCalcActive(() => option === options.calc ? active : inactive)
     setColorPickActive(() => option === options.colorPick ? active : inactive)
-    setTictactoeActive(() => option === options.tictactoe ? active : inactive)
+    // setTictactoeActive(() => option === options.tictactoe ? active : inactive)
   }
   
   const calc = () => {
@@ -48,15 +48,15 @@ const Portfolio = () => {
     )
   }
   
-  const tictactoe = () => {
-    activeSwitcher(options.tictactoe)
-    setPage(
-      <div className="appsMobile-col">
-        <h3>Tic-Tac-Toe</h3>
-        <div className="appsMobile-blockCenter"><TicTacToe /></div>
-      </div>
-    )
-  }
+  // const tictactoe = () => {
+  //   activeSwitcher(options.tictactoe)
+  //   setPage(
+  //     <div className="appsMobile-col">
+  //       <h3>Tic-Tac-Toe</h3>
+  //       <div className="appsMobile-blockCenter"><TicTacToe /></div>
+  //     </div>
+  //   )
+  // }
   
   return (
     <div className="mobile-content-apps">

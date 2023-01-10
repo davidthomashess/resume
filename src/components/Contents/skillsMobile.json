@@ -5,14 +5,14 @@
         "header": "Code",
         "js": {
           "sub": "JavaScript",
-          "b1": "Break up complex functions",
-          "b2": "Avoid magic values",
-          "b3": "Add dynamic features to websites",
-          "b4": "Use map to iterate through key/value pairs"
+          "b1": "Functions",
+          "b2": "imports/exports",
+          "b3": "Manipulate the DOM to add dynamic features to websites",
+          "b4": "Map key/value pairs"
         },
         "ts": {
           "sub": "TypeScript",
-          "b1": "Type consts, components, props, & functions",
+          "b1": "Type consts, components, props, and functions",
           "b2": "Abstract types for optimal maintainability"
         },
         "bash": {
@@ -22,18 +22,18 @@
         },
         "json": {
           "sub": "JSON",
-          "b1": "Store & organize; strings, numbers, booleans, arrays, & objects",
-          "b2": "Import JSON key/value pairs for use in React components & Cypress assertions"
+          "b1": "Store and organize variables and objects",
+          "b2": "Use JSON imports in React components and Cypress assertions"
         }
       },
       "shell": {
         "header": "Terminal",
         "linux": {
           "sub": "Linux",
-          "b1": "Handle users & permissions with passwd, chown, chmod, wheel",
-          "b2": "SSH to access web servers with RSA keys",
-          "b3": "Secure root user",
-          "b4": "Use Python for more detailed logic"
+          "b1": "Users, passwd, chown, chmod, wheel",
+          "b2": "SSH, RSA",
+          "b3": "Secure root",
+          "b4": "Scripting"
         },
         "batch": {
           "sub": "BATCH",
@@ -44,7 +44,7 @@
         "ps": {
           "sub": "PowerShell",
           "b1": "Write logic-based commands to can bod-based images for Kafka lag",
-          "b2": "Use OpenShift oc to monitor pods & containers"
+          "b2": "Use OpenShift oc to monitor pods"
         }
       },
       "web": {
@@ -54,7 +54,7 @@
           "b1": "Build Apps",
           "b2": "Troubleshoot/Debug",
           "b3": "Write fixes",
-          "b4": "Clean up & organize code",
+          "b4": "Clean up and organize code",
           "b5": "Follow HTML best practices"
         },
         "css": {
@@ -65,16 +65,16 @@
           "b4": "Dynamic Styling"
         },
         "graphics": {
-          "sub": "Photoshop/Illustrator",
-          "b1": "Create images for logos & backgrounds",
+          "sub": "Ps/Ai",
+          "b1": "Create images for logos and backgrounds",
           "b2": "Build wireframes",
-          "b3": "Pixel & color precisness",
-          "b4": "Create scalable icons & logos with vectors"
+          "b3": "Aim for pixel and color precisness",
+          "b4": "Vectors"
         },
         "dns": {
-          "sub": "Hosting & DNS",
-          "b1": "Buy domains names & attatch them to web apps",
-          "b2": "Host websites on images with Digital Ocean droplets",
+          "sub": "Hosting and DNS",
+          "b1": "Buy domain names",
+          "b2": "Host & attatch domain",
           "b3": "Deploy websites to Netlify from GitHub"
         }
       },
@@ -82,36 +82,36 @@
         "header": "Testing",
         "cypress": {
           "sub": "Cyress.io",
-          "b1": "Build & use auto test scripts to assert web apps",
-          "b2": "Run scenario automation scripts",
+          "b1": "Build and use auto test scripts to assert web apps",
+          "b2": "Run Cypress scenario",
           "b3": "Fuzz inputs",
-          "b4": "Assert content & visibility"
+          "b4": "Assert content and visibility"
         },
         "manual": {
           "sub": "Manual Scripts",
-          "b1": "Write & use manual test scripts",
-          "b2": "Check for content or scenarios for extra assurance",
-          "b3": "Assert content & scenarios that cannot be automated"
+          "b1": "Write and use manual tests",
+          "b2": "Assert content & scenarios",
+          "b3": "508 tools"
         },
         "google": {
           "sub": "Google Analytics",
-          "b1": "Test Realtime API calls & assert labels",
-          "b2": "Narrow results by; region, hostname, date ranges, etc.",
-          "b3": "Act on & alert others of any abnormalities"
+          "b1": "Test Realtime API calls and assert labels",
+          "b2": "Narrow results by; region, hostname, etc.",
+          "b3": "Act on and alert others of any abnormalities"
         }
       },
       "admin": {
         "header": "Admin",
         "oc": {
           "sub": "OpenShift",
-          "b1": "Installation of OpenShift 4 on vSphere",
-          "b2": "Manage pods, containers & images",
-          "b3": "Use the OpenShift pipeline to automatically update & deploy fresh images to pods for CodeReady Workspaces"
+          "b1": "Installation of OpenShift",
+          "b2": "Manage pods, containers and images",
+          "b3": "Pipeline images deployments to pods for CRW"
         },
         "prisma": {
           "sub": "Prisma",
-          "b1": "Scan & react to vulnerabilities on the OpenShift clusters & nodes",
-          "b2": "Work with RedHat & security teams to resolve or allow vulnerabilities on given images"
+          "b1": "Scan and react to vulnerabilities on pods, clusters, and nodes",
+          "b2": "Work with other teams to manage vulnerabilities on given images"
         },
         "docker": {
           "sub": "Dockerfile",
@@ -119,7 +119,7 @@
         },
         "yaml": {
           "sub": "YAML",
-          "b1": "Update YAML files to customize OpenShift pods, containers, & secrets",
+          "b1": "Update YAML files to customize OpenShift pods, containers, and secrets",
           "b2": "Configure yaml files to manage plugin updates"
         }
       },
@@ -127,15 +127,15 @@
         "header": "Agile",
         "jira": {
           "sub": "Jira",
-          "b1": "Create & manage tickets",
-          "b2": "Pass or fail tickets",
-          "b3": "Work on tickets assigned to me for app development & resolve & defects",
-          "b4": "Create & manage sprints & test plans"
+          "b1": "Create and manage stories, bugs, tests, and spikes",
+          "b2": "Pass or fail tickets using both manual methods and Cypress auotmation",
+          "b3": "Work on tickets assigned to me for app development and resolve and defects",
+          "b4": "Create and manage sprints and test plans"
         },
         "note": {
           "sub": "OneNote",
           "b1": "Documentation",
-          "b2": "Share & collaborate",
+          "b2": "Share and collaborate",
           "b3": "Note taking"
         }
       },
@@ -174,19 +174,19 @@
         },
         "nosql": {
           "sub": "NoSQL",
-          "b1": "Query for keys & data values",
-          "b2": "Fast & dynamic data storage"
+          "b1": "Query for keys and data values",
+          "b2": "Fast and dynamic data storage"
         },
         "dba": {
           "sub": "DBA, MySQL",
-          "b1": "Create databases & tables",
-          "b2": "Setup keys & foreign keys per table",
+          "b1": "Create databases and tables",
+          "b2": "Setup keys and foreign keys per table",
           "b3": "User management"
         },
         "er": {
           "sub": "ER Diagrams",
           "b1": "Create relational flowcharts",
-          "b2": "Identify primary & foreign keys",
+          "b2": "Identify primary and foreign keys",
           "b3": "Normalization",
           "b4": "Avoid many-to-many"
         }

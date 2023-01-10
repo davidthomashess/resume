@@ -1,6 +1,6 @@
 import Calculator from './Calculator/Calculator'
 import ColorPicker from './ColorPicker/ColorPicker'
-import TicTacToe from './TicTacToe/TicTacToe'
+// import TicTacToe from './TicTacToe/TicTacToe'
 
 import './Portfolio.css'
 

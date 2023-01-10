@@ -40,13 +40,14 @@
   width: 76%;
 }
 
-.inner-sub-skill-content-mobile {
-  width: 300px;
-  padding-left: 20px;
+.inner-agile-skill-content-mobile {
+  white-space: normal;
+  width: 230px;
+  padding-left: 5px;
   padding-right: 20px;
 }
 
-.inner-sub-skill-header-mobile{
+.inner-agile-skill-header-mobile{
   width: 300px;
   padding-left: 40px;
   padding-right: 20px;

@@ -2,22 +2,27 @@ import React, { useState } from 'react'
 
 import './Admin.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  oc,
+  prisma,
+  docker,
+  yaml
+} = skills.global.skills.admin
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-sub-skill-header-mobile">
+      <div className="inner-admin-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-sub-skill-content-mobile">
+      <div className="inner-admin-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
           {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
         </ul>
       </div>
     </div>
@@ -35,14 +40,11 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "Prisma Cloud",
+          `${oc.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${oc.b1}`,
+            `${oc.b2}`,
+            `${oc.b3}`
           ]
         )}
         
@@ -57,14 +59,10 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "Dockerfile",
+          `${prisma.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${prisma.b1}`,
+            `${prisma.b2}`
           ]
         )}
         
@@ -79,14 +77,9 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          "OC Pipeline",
+          `${docker.sub}`,
           [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
+            `${docker.b1}`
           ]
         )}
           
@@ -101,11 +94,10 @@ const Admin = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "OpenShift",
+          `${yaml.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${yaml.b1}`,
+            `${yaml.b2}`
           ]
         )}
         
