@@ -1,0 +1,196 @@
+{
+  "global": {
+    "skills": {
+      "code": {
+        "header": "Code",
+        "js": {
+          "sub": "JavaScript",
+          "b1": "Break up complex functions",
+          "b2": "Avoid magic values",
+          "b3": "Add dynamic features to websites",
+          "b4": "Use map to iterate through key/value pairs"
+        },
+        "ts": {
+          "sub": "TypeScript",
+          "b1": "Type consts, components, props, & functions",
+          "b2": "Abstract types for optimal maintainability"
+        },
+        "bash": {
+          "sub": "Bash",
+          "b1": "Create custom commands using; git, npm, sed/awk, etc.",
+          "b2": "Use Bash to create instant Vite React sandboxes"
+        },
+        "json": {
+          "sub": "JSON",
+          "b1": "Store & organize; strings, numbers, booleans, arrays, & objects",
+          "b2": "Import JSON key/value pairs for use in React components & Cypress assertions"
+        }
+      },
+      "shell": {
+        "header": "Terminal",
+        "linux": {
+          "sub": "Linux",
+          "b1": "Handle users & permissions with passwd, chown, chmod, wheel",
+          "b2": "SSH to access web servers with RSA keys",
+          "b3": "Secure root user",
+          "b4": "Use Python for more detailed logic"
+        },
+        "batch": {
+          "sub": "BATCH",
+          "b1": "Manage personal network settings",
+          "b2": "Obtain IP info for portforwarding",
+          "b3": "Automate Kafka data stream scans"
+        },
+        "ps": {
+          "sub": "PowerShell",
+          "b1": "Write logic-based commands to can bod-based images for Kafka lag",
+          "b2": "Use OpenShift oc to monitor pods & containers"
+        }
+      },
+      "web": {
+        "header": "Web",
+        "react": {
+          "sub": "React",
+          "b1": "Build Apps",
+          "b2": "Troubleshoot/Debug",
+          "b3": "Write fixes",
+          "b4": "Clean up & organize code",
+          "b5": "Follow HTML best practices"
+        },
+        "css": {
+          "sub": "CSS",
+          "b1": "Positions",
+          "b2": "Color",
+          "b3": "Arrange",
+          "b4": "Dynamic Styling"
+        },
+        "graphics": {
+          "sub": "Photoshop/Illustrator",
+          "b1": "Create images for logos & backgrounds",
+          "b2": "Build wireframes",
+          "b3": "Pixel & color precisness",
+          "b4": "Create scalable icons & logos with vectors"
+        },
+        "dns": {
+          "sub": "Hosting & DNS",
+          "b1": "Buy domains names & attatch them to web apps",
+          "b2": "Host websites on images with Digital Ocean droplets",
+          "b3": "Deploy websites to Netlify from GitHub"
+        }
+      },
+      "test": {
+        "header": "Testing",
+        "cypress": {
+          "sub": "Cyress.io",
+          "b1": "Build & use auto test scripts to assert web apps",
+          "b2": "Run scenario automation scripts",
+          "b3": "Fuzz inputs",
+          "b4": "Assert content & visibility"
+        },
+        "manual": {
+          "sub": "Manual Scripts",
+          "b1": "Write & use manual test scripts",
+          "b2": "Check for content or scenarios for extra assurance",
+          "b3": "Assert content & scenarios that cannot be automated"
+        },
+        "google": {
+          "sub": "Google Analytics",
+          "b1": "Test Realtime API calls & assert labels",
+          "b2": "Narrow results by; region, hostname, date ranges, etc.",
+          "b3": "Act on & alert others of any abnormalities"
+        }
+      },
+      "admin": {
+        "header": "Admin",
+        "oc": {
+          "sub": "OpenShift",
+          "b1": "Installation of OpenShift 4 on vSphere",
+          "b2": "Manage pods, containers & images",
+          "b3": "Use the OpenShift pipeline to automatically update & deploy fresh images to pods for CodeReady Workspaces"
+        },
+        "prisma": {
+          "sub": "Prisma",
+          "b1": "Scan & react to vulnerabilities on the OpenShift clusters & nodes",
+          "b2": "Work with RedHat & security teams to resolve or allow vulnerabilities on given images"
+        },
+        "docker": {
+          "sub": "Dockerfile",
+          "b1": "Write Dockerfiles to setup all the tools needed for given images that will be used in CodeReady Workspaces"
+        },
+        "yaml": {
+          "sub": "YAML",
+          "b1": "Update YAML files to customize OpenShift pods, containers, & secrets",
+          "b2": "Configure yaml files to manage plugin updates"
+        }
+      },
+      "agile": {
+        "header": "Agile",
+        "jira": {
+          "sub": "Jira",
+          "b1": "Create & manage tickets",
+          "b2": "Pass or fail tickets",
+          "b3": "Work on tickets assigned to me for app development & resolve & defects",
+          "b4": "Create & manage sprints & test plans"
+        },
+        "note": {
+          "sub": "OneNote",
+          "b1": "Documentation",
+          "b2": "Share & collaborate",
+          "b3": "Note taking"
+        }
+      },
+      "git": {
+        "header": "Git",
+        "git": {
+          "sub": "Git",
+          "b1": "Pull, push, branch, stage, merge",
+          "b2": "Resolve merge conflicts",
+          "b3": "Commit with meaningful messages"
+        },
+        "bitbucket": {
+          "sub": "BitBucket",
+          "b1": "Pull requests ",
+          "b2": "Add reviewers",
+          "b3": "Merge",
+          "b4": "Create branches"
+        },
+        "github": {
+          "sub": "GitHub",
+          "b1": "Pull requests",
+          "b2": "Repo management",
+          "b3": "Merge",
+          "b4": "Connect deployment branches to Netlify"
+        }
+      },
+      "data": {
+        "header": "Databases",
+        "sql": {
+          "sub": "SQL",
+          "b1": "Query for data",
+          "b2": "Use views for temporary tables",
+          "b3": "Join tables",
+          "b4": "Run calculations to generate reports",
+          "b5": "Repair bad data (e.g. float set to \"..3\""
+        },
+        "nosql": {
+          "sub": "NoSQL",
+          "b1": "Query for keys & data values",
+          "b2": "Fast & dynamic data storage"
+        },
+        "dba": {
+          "sub": "DBA, MySQL",
+          "b1": "Create databases & tables",
+          "b2": "Setup keys & foreign keys per table",
+          "b3": "User management"
+        },
+        "er": {
+          "sub": "ER Diagrams",
+          "b1": "Create relational flowcharts",
+          "b2": "Identify primary & foreign keys",
+          "b3": "Normalization",
+          "b4": "Avoid many-to-many"
+        }
+      }
+    }
+  }
+}

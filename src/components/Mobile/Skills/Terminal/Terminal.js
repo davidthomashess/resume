@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 
 import './Terminal.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  linux,
+  batch,
+  ps
+} = skills.global.skills.shell
 
 const skillBuilder = (title, skills) => {
   return (
@@ -15,9 +21,6 @@ const skillBuilder = (title, skills) => {
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
-          {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
         </ul>
       </div>
     </div>
@@ -35,14 +38,11 @@ const Terminal = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "CMD",
+          `${batch.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${batch.b1}`,
+            `${batch.b2}`,
+            `${batch.b3}`
           ]
         )}
         
@@ -57,14 +57,10 @@ const Terminal = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "PowerShell",
+          `${ps.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${ps.b1}`,
+            `${ps.b2}`
           ]
         )}
         
@@ -79,11 +75,12 @@ const Terminal = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "BASH",
+          `${linux.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${linux.b1}`,
+            `${linux.b2}`,
+            `${linux.b3}`,
+            `${linux.b4}`
           ]
         )}
         

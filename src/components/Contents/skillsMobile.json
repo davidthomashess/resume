@@ -1,0 +1,196 @@
+{
+  "global": {
+    "skills": {
+      "code": {
+        "header": "Code",
+        "js": {
+          "sub": "JavaScript",
+          "b1": "Functions",
+          "b2": "imports/exports",
+          "b3": "Manipulate the DOM to add dynamic features to websites",
+          "b4": "Map key/value pairs"
+        },
+        "ts": {
+          "sub": "TypeScript",
+          "b1": "Type consts, components, props, and functions",
+          "b2": "Abstract types for optimal maintainability"
+        },
+        "bash": {
+          "sub": "Bash",
+          "b1": "Create custom commands using; git, npm, sed/awk, etc.",
+          "b2": "Use Bash to create instant Vite React sandboxes"
+        },
+        "json": {
+          "sub": "JSON",
+          "b1": "Store and organize variables and objects",
+          "b2": "Use JSON imports in React components and Cypress assertions"
+        }
+      },
+      "shell": {
+        "header": "Terminal",
+        "linux": {
+          "sub": "Linux",
+          "b1": "Users, passwd, chown, chmod, wheel",
+          "b2": "SSH, RSA",
+          "b3": "Secure root",
+          "b4": "Scripting"
+        },
+        "batch": {
+          "sub": "BATCH",
+          "b1": "Manage personal network settings",
+          "b2": "Obtain IP info for portforwarding",
+          "b3": "Automate Kafka data stream scans"
+        },
+        "ps": {
+          "sub": "PowerShell",
+          "b1": "Write logic-based commands to can bod-based images for Kafka lag",
+          "b2": "Use OpenShift oc to monitor pods"
+        }
+      },
+      "web": {
+        "header": "Web",
+        "react": {
+          "sub": "React",
+          "b1": "Build Apps",
+          "b2": "Troubleshoot/Debug",
+          "b3": "Write fixes",
+          "b4": "Clean up and organize code",
+          "b5": "Follow HTML best practices"
+        },
+        "css": {
+          "sub": "CSS",
+          "b1": "Positions",
+          "b2": "Color",
+          "b3": "Arrange",
+          "b4": "Dynamic Styling"
+        },
+        "graphics": {
+          "sub": "Ps/Ai",
+          "b1": "Create images for logos and backgrounds",
+          "b2": "Build wireframes",
+          "b3": "Aim for pixel and color precisness",
+          "b4": "Vectors"
+        },
+        "dns": {
+          "sub": "Hosting and DNS",
+          "b1": "Buy domain names",
+          "b2": "Host & attatch domain",
+          "b3": "Deploy websites to Netlify from GitHub"
+        }
+      },
+      "test": {
+        "header": "Testing",
+        "cypress": {
+          "sub": "Cyress.io",
+          "b1": "Build and use auto test scripts to assert web apps",
+          "b2": "Run Cypress scenario",
+          "b3": "Fuzz inputs",
+          "b4": "Assert content and visibility"
+        },
+        "manual": {
+          "sub": "Manual Scripts",
+          "b1": "Write and use manual tests",
+          "b2": "Assert content & scenarios",
+          "b3": "508 tools"
+        },
+        "google": {
+          "sub": "Google Analytics",
+          "b1": "Test Realtime API calls and assert labels",
+          "b2": "Narrow results by; region, hostname, etc.",
+          "b3": "Act on and alert others of any abnormalities"
+        }
+      },
+      "admin": {
+        "header": "Admin",
+        "oc": {
+          "sub": "OpenShift",
+          "b1": "Installation of OpenShift",
+          "b2": "Manage pods, containers and images",
+          "b3": "Pipeline images deployments to pods for CRW"
+        },
+        "prisma": {
+          "sub": "Prisma",
+          "b1": "Scan and react to vulnerabilities on pods, clusters, and nodes",
+          "b2": "Work with other teams to manage vulnerabilities on given images"
+        },
+        "docker": {
+          "sub": "Dockerfile",
+          "b1": "Write Dockerfiles to setup all the tools needed for given images that will be used in CodeReady Workspaces"
+        },
+        "yaml": {
+          "sub": "YAML",
+          "b1": "Update YAML files to customize OpenShift pods, containers, and secrets",
+          "b2": "Configure yaml files to manage plugin updates"
+        }
+      },
+      "agile": {
+        "header": "Agile",
+        "jira": {
+          "sub": "Jira",
+          "b1": "Create and manage stories, bugs, tests, and spikes",
+          "b2": "Pass or fail tickets using both manual methods and Cypress auotmation",
+          "b3": "Work on tickets assigned to me for app development and resolve and defects",
+          "b4": "Create and manage sprints and test plans"
+        },
+        "note": {
+          "sub": "OneNote",
+          "b1": "Documentation",
+          "b2": "Share and collaborate",
+          "b3": "Note taking"
+        }
+      },
+      "git": {
+        "header": "Git",
+        "git": {
+          "sub": "Git",
+          "b1": "Pull, push, branch, stage, merge",
+          "b2": "Resolve merge conflicts",
+          "b3": "Commit with meaningful messages"
+        },
+        "bitbucket": {
+          "sub": "BitBucket",
+          "b1": "Pull requests ",
+          "b2": "Add reviewers",
+          "b3": "Merge",
+          "b4": "Create branches"
+        },
+        "github": {
+          "sub": "GitHub",
+          "b1": "Pull requests",
+          "b2": "Repo management",
+          "b3": "Merge",
+          "b4": "Connect deployment branches to Netlify"
+        }
+      },
+      "data": {
+        "header": "Databases",
+        "sql": {
+          "sub": "SQL",
+          "b1": "Query for data",
+          "b2": "Use views for temporary tables",
+          "b3": "Join tables",
+          "b4": "Run calculations to generate reports",
+          "b5": "Repair bad data (e.g. float set to \"..3\""
+        },
+        "nosql": {
+          "sub": "NoSQL",
+          "b1": "Query for keys and data values",
+          "b2": "Fast and dynamic data storage"
+        },
+        "dba": {
+          "sub": "DBA, MySQL",
+          "b1": "Create databases and tables",
+          "b2": "Setup keys and foreign keys per table",
+          "b3": "User management"
+        },
+        "er": {
+          "sub": "ER Diagrams",
+          "b1": "Create relational flowcharts",
+          "b2": "Identify primary and foreign keys",
+          "b3": "Normalization",
+          "b4": "Avoid many-to-many"
+        }
+      }
+    }
+  }
+}

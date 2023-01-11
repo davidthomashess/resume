@@ -18,7 +18,8 @@
   display: inline-block;
   border: 2px #FFF solid;
   margin: 0;
-  padding-top: 20px;
+  line-height: 10px;
+  padding-top: 10px;
   background-color: none;
   background: none;
   color: #fff;
@@ -31,7 +32,7 @@
   
   cursor: pointer;
   width: 50%;
-  height: 39px;
+  height: 20px;
 }
 
 .skillButtons-rows-mobile {
