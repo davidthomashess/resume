@@ -5,26 +5,26 @@
 <h2>Definition of Done</h2>
 <ol>
   <li><del>Setup resume repo</del></li>
-  <li>Create Web Server</li>
+  <li><del>Create Web Server</del></li>
   <ol type="A">
-    <li>Spin up Ubuntu web server on DigitalOcean with npm react installed</li>
+    <li><del>Use Netlify</del></li>
     <li><del>Register "davidthess" as a domain</del></li>
-    <li>Setup a CI/CD pipeline to deploy to resume web server</li>
+    <li><del>Setup a pipeline to deploy to resume web server from GitHub</del></li>
   </ol>
   <li>Resume webpage</li>
   <ol type="A">
-    <li>Responsive screen sizes for; Desktop, Tablet, Mobile</li>
+    <li><del>Responsive screen sizes for; Desktop, Tablet, Mobile</del></li>
     <li>Complete content for...</li>
     <ol type="a">
-      <li>Skills</li>
-      <li>Education</li>
+      <li><del>Skills</del></li>
+      <li><del>Education</del></li>
       <li>Apps</li>
       <ol type="i">
-        <li>Calculator</li>
-        <li>Color Picker</li>
+        <li><del>Calculator</del></li>
+        <li><del>Color Picker</del></li>
         <li>Tic-Tac-Toe</li>
       </ol>
-      <li>Experience</li>
+      <li><del>Experience</del></li>
     </ol>
   </ol>
 </ol>
