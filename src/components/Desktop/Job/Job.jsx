@@ -18,10 +18,10 @@ const Job = () => {
         <div className="desktop-work-title">
           <b>Accenture Federal Services</b>
           <br />
-          <b>San Antonio, TX - 2017</b>
+          <b>San Antonio, TX - <b>(Present)</b></b>
         </div>
         <div className="desktop-justify-text">
-          <p className="desktop-work-text role">Automation Test Scripter <b>(Present)</b></p>
+          <p className="desktop-work-text role">Automation Test Scripter</p>
           <ul className="desktop-ul-nobuff">
             <li className="desktop-work-text">Write Cypress automation test scripts to speed up QA.</li>
             <li className="desktop-work-text">Run test scripts to assert deployments.</li>
