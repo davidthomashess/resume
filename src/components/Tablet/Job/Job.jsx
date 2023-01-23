@@ -18,10 +18,10 @@ const Job = () => {
         <div className="tablet-work-title">
           <b>Accenture Federal Services</b>
           <br />
-          <b>San Antonio, TX - 2017</b>
+          <b>San Antonio, TX - <i>(Present)</i></b>
         </div>
         <div className="tablet-justify-text">
-          <p className="tablet-work-text role">Automation Test Scripter <b>(Present)</b></p>
+          <p className="tablet-work-text role">React Automation Engineer</p>
           <ul className="tablet-ul-nobuff">
             <li className="tablet-work-text">Write Cypress automation test scripts to speed up QA.</li>
             <li className="tablet-work-text">Run test scripts to assert deployments.</li>
@@ -41,7 +41,7 @@ const Job = () => {
         <div className="tablet-work-title">
           <b>Robert Half Technology</b>
           <br />
-          <b>San Antonio, Texas - 2017</b>
+          <b>San Antonio, Texas - <i>2017</i></b>
         </div>
         <div className="tablet-justify-text">
           <p className="tablet-work-text role">System Technician - Temp</p>
