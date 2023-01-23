@@ -40,7 +40,7 @@ const Job = () => {
           <b>Accenture Federal Services</b>
           <br />
           <b>San Antonio, TX - <b>(Present)</b></b>
-          <p className="mobile-work-text">Automation Test Scripter</p>
+          <p className="mobile-work-text">React Automation Engineer</p>
           <ul className="workMobile-ul-nobuff">
             <li className="mobile-work-text">Write Cypress automation test scripts to speed up QA.</li>
             <li className="mobile-work-text">Run test scripts to assert deployments.</li>
