@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './ColorPicker.css'
 
 const hexHash=/^#([0-9a-f]{3}){1,2}$/i;
+// const hex1=/[a-f]/g
 
 const ColorPicker = () => {
   const handleFocusRGB = (event) => event.target.select()
@@ -35,7 +36,7 @@ const ColorPicker = () => {
         setHexes([redHex, grnHex, bluHex])
         setRgb([redNum, grnNum, bluNum])
       } else {
-        setHexColor('#HEX_ONLY')
+        setHexColor('#6_Digits_Only')
       }
     }, hexInputSwitch)
 
@@ -43,19 +44,18 @@ const ColorPicker = () => {
   }, [hexColor, hexInputSwitch])
   
   const HexColorAndHexDelayOn = (val) => {
-    setHexInputSwitch(800)
+    setHexInputSwitch(1600)
     setHexColor(val)
   }
   
   const redText = (val) => {
-    
     const hex = val.target.value < 16 
       ? `0${
-          isNaN(Number.parseInt(val.target.value, 10).toString(16)) 
+          isNaN(Number.parseInt(val.target.value, 10)) 
           ? '0'
           : (Number.parseInt(val.target.value, 10).toString(16))
         }` 
-      : Number.parseInt(val.target.value, 10).toString(16)  
+      : Number.parseInt(val.target.value, 10).toString(16)
     const num = parseInt(Number.parseInt(val.target.value, 10)) || 0
     
     setHexes(previousHexes => Object.assign([], previousHexes, {0: num <= 255 ? hex : 'ff'}))
@@ -63,13 +63,14 @@ const ColorPicker = () => {
   }
   
   const greenText = (val) => {
+    
     const hex = val.target.value < 16 
       ? `0${
-          isNaN(Number.parseInt(val.target.value, 10).toString(16)) 
+          isNaN(Number.parseInt(val.target.value, 10)) 
           ? '0'
           : (Number.parseInt(val.target.value, 10).toString(16))
         }` 
-      : Number.parseInt(val.target.value, 10).toString(16)  
+      : Number.parseInt(val.target.value, 10).toString(16)
     const num = parseInt(Number.parseInt(val.target.value, 10)) || 0
     
     setHexes(previousHexes => Object.assign([], previousHexes, {1: num <= 255 ? hex : 'ff'}))
@@ -79,7 +80,7 @@ const ColorPicker = () => {
   const blueText = (val) => {
     const hex = val.target.value < 16 
       ? `0${
-          isNaN(Number.parseInt(val.target.value, 10).toString(16)) 
+          isNaN(Number.parseInt(val.target.value, 10)) 
           ? '0'
           : (Number.parseInt(val.target.value, 10).toString(16))
         }` 
@@ -89,8 +90,6 @@ const ColorPicker = () => {
     setHexes(previousHexes => Object.assign([], previousHexes, {2: num <= 255 ? hex : 'ff'}))
     setRgb(previousRgb => Object.assign([], previousRgb, {2: num <= 255 ? num : 255}))
   }
-  
-  console.log(document.body.style.backgroundColor);
   
   return (
     <div className="desktop-contains-colorPicker">
@@ -172,7 +171,11 @@ const ColorPicker = () => {
           value={hexColor}
           onChange={val => HexColorAndHexDelayOn(val.target.value)}
         />
-        <input className="desktop-cp-button" type="button" onClick={() =>  navigator.clipboard.writeText(`#${hexes[0]}${hexes[1]}${hexes[2]}`)} value="copy" />
+        <input 
+          className="desktop-cp-button" 
+          type="button" 
+          onClick={() =>  navigator.clipboard.writeText(`#${hexes[0]}${hexes[1]}${hexes[2]}`)} value="copy" 
+        />
       </div>
     </div>
   )
