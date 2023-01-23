@@ -21,7 +21,7 @@ const Job = () => {
           <b>San Antonio, TX - <b>(Present)</b></b>
         </div>
         <div className="desktop-justify-text">
-          <p className="desktop-work-text role">Automation Test Scripter</p>
+          <p className="desktop-work-text role">React Automation Engineer</p>
           <ul className="desktop-ul-nobuff">
             <li className="desktop-work-text">Write Cypress automation test scripts to speed up QA.</li>
             <li className="desktop-work-text">Run test scripts to assert deployments.</li>
