@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 
 import './Testing.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  cypress,
+  manual,
+  google
+} = skills.global.skills.test
 
 const skillBuilder = (title, skills) => {
   return (
@@ -35,14 +41,11 @@ const Testing = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "Cypress",
+          `${manual.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${manual.b1}`,
+            `${manual.b2}`,
+            `${manual.b3}`
           ]
         )}
         
@@ -57,39 +60,14 @@ const Testing = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "Google Analytics",
+          `${google.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${google.b1}`,
+            `${google.b2}`,
+            `${google.b3}`
           ]
         )}
         
-        <div className="skill-button blocks" onClick={subSkill4}>{`>`}</div>
-      </div>
-    )
-  }
-  
-  const subSkill4 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
-          
-        {skillBuilder(
-          "Investigative Testing",
-          [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
-          ]
-        )}
-          
         <div className="skill-button disabled blocks" disabled>{`>`}</div>
       </div>
     )
@@ -101,11 +79,12 @@ const Testing = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "Learning Sessions",
+          `${cypress.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${cypress.b1}`,
+            `${cypress.b2}`,
+            `${cypress.b3}`,
+            `${cypress.b4}`
           ]
         )}
         
