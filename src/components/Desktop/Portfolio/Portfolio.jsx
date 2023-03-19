@@ -1,8 +1,8 @@
-import Calculator from './Calculator/Calculator'
-import ColorPicker from './ColorPicker/ColorPicker'
-// import TicTacToe from './TicTacToe/TicTacToe'
+import Calculator from "./Calculator/Calculator";
+import ColorPicker from "./ColorPicker/ColorPicker";
+import TicTacToe from "./TicTacToe/TicTacToe";
 
-import './Portfolio.css'
+import "./Portfolio.css";
 
 const Portfolio = () => {
   return (
@@ -15,12 +15,12 @@ const Portfolio = () => {
         <h3>Color Picker</h3>
         <ColorPicker />
       </div>
-      {/* <div className="desktop-col">
+      <div className="desktop-col">
         <h3>Tic-Tac-Toe</h3>
         <TicTacToe />
-      </div> */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
