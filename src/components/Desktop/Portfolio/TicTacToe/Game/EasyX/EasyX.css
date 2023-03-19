@@ -15,7 +15,7 @@
 .desktop-row-1-col-b {
   width: 56px;
   height: 56px;
-  border: 1px #777 solid;
+  border: 5x #777 solid;
   border-top: none;
   display: inline-block;
   text-align: center;
@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.desktop-row-2 { 
+.desktop-row-2 {
   display: block;
   color: red;
 }

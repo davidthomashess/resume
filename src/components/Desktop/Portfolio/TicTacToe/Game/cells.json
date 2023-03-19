@@ -1,0 +1,46 @@
+{
+  "cellClass": {
+    "aOneA": "desktop-row-1-col-a",
+    "aOneB": "desktop-row-1-col-b",
+    "aOneC": "desktop-row-1-col-c",
+    "bTwoA": "desktop-row-2-col-a",
+    "bTwoB": "desktop-row-2-col-b",
+    "bTwoC": "desktop-row-2-col-c",
+    "cTreA": "desktop-row-3-col-a",
+    "cTreB": "desktop-row-3-col-b",
+    "cTreC": "desktop-row-3-col-c"
+  },
+  "comPicks": {
+    "aOneA": false,
+    "aOneB": false,
+    "aOneC": false,
+    "bTwoA": false,
+    "bTwoB": false,
+    "bTwoC": false,
+    "cTreA": false,
+    "cTreB": false,
+    "cTreC": false
+  },
+  "myPicks": {
+    "aOneA": false,
+    "aOneB": false,
+    "aOneC": false,
+    "bTwoA": false,
+    "bTwoB": false,
+    "bTwoC": false,
+    "cTreA": false,
+    "cTreB": false,
+    "cTreC": false
+  },
+  "taken": {
+    "aOneA": false,
+    "aOneB": false,
+    "aOneC": false,
+    "bTwoA": false,
+    "bTwoB": false,
+    "bTwoC": false,
+    "cTreA": false,
+    "cTreB": false,
+    "cTreC": false
+  }
+}
