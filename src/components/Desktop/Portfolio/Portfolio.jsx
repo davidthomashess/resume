@@ -16,7 +16,7 @@ const Portfolio = () => {
         <ColorPicker />
       </div>
       <div className="desktop-col">
-        <h3>{"(Easy -> X) works"}</h3>
+        <h3>{"(Easy -> X) workish"}</h3>
         <TicTacToe />
       </div>
     </div>
