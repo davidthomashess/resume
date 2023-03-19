@@ -23,6 +23,9 @@ export default function EasyX() {
   const [myWin, setMyWin] = useState("unknown");
   const [finished, setFinished] = useState(false);
 
+  console.log(comWin);
+  console.log(myWin);
+
   // const outputComPicks = () => {
   //   console.log()
   //   console.log("COMddddd");
@@ -32,7 +35,7 @@ export default function EasyX() {
   // };
 
   const engineComputer = useCallback(() => {
-    console.log("ENGINE-PC");
+    // console.log("ENGINE-PC");
     const randomTime = Math.floor(Math.random() * timer.to) + timer.from;
 
     let comPickerSearcher;
@@ -78,13 +81,13 @@ export default function EasyX() {
         !myArray[comPickerSearcher] &&
         !takenArray[comPickerSearcher]
       );
-      if (comPickerVerifying === false) {
-        console.log(`comNumPicked: ${comPickerSearcher}`);
-        console.log(`checkComArray: ${comArray[comPickerSearcher]}`);
-        console.log(`checkMyArray: ${myArray[comPickerSearcher]}`);
-        console.log(`Neither picked yet: ${!comPickerVerifying}`);
-        console.log(`comVerify: ${comPickerVerifying}`);
-      }
+      // if (comPickerVerifying === false) {
+      //   console.log(`comNumPicked: ${comPickerSearcher}`);
+      //   console.log(`checkComArray: ${comArray[comPickerSearcher]}`);
+      //   console.log(`checkMyArray: ${myArray[comPickerSearcher]}`);
+      //   console.log(`Neither picked yet: ${!comPickerVerifying}`);
+      //   console.log(`comVerify: ${comPickerVerifying}`);
+      // }
     }
 
     const myWinCalc =
@@ -109,8 +112,8 @@ export default function EasyX() {
 
     if (!myWinCalc && !comWinCalc && !finished) {
       setTimeout(() => {
-        console.log("engineSearch4433");
-        console.log(comPickerSearcher);
+        // console.log("engineSearch4433");
+        // console.log(comPickerSearcher);
 
         comPickerSearcher === 0
           ? setTaken((taken) => (taken = { ...taken, ...{ aOneA: true } }))
@@ -177,8 +180,8 @@ export default function EasyX() {
         (comPicks.aOneA && comPicks.bTwoB && comPicks.cTreC) ||
         (comPicks.cTreA && comPicks.bTwoB && comPicks.aOneC);
 
-      console.log(`:::::myWinCalc: ${myWinCalc}`);
-      console.log(`:::::::ComWinCalc: ${comWinCalc}`);
+      // console.log(`:::::myWinCalc: ${myWinCalc}`);
+      // console.log(`:::::::ComWinCalc: ${comWinCalc}`);
       if (myWinCalc && !comWinCalc) {
         setMyWin(() => "true");
         setFinished(() => true);
@@ -221,12 +224,12 @@ export default function EasyX() {
   ]);
 
   const handleComThink = useCallback(() => {
-    console.log("HANDLETHINK");
+    // console.log("HANDLETHINK");
     engineComputer();
   }, [engineComputer]);
 
   const handleMyPicks = (play) => {
-    console.log("HANDLEPICKS");
+    // console.log("HANDLEPICKS");
     if (!unlockedUE) setUnlockedUE((unlockedUE) => !unlockedUE);
     setComThink((comThink) => !comThink);
     setMyPicks((myPicks) => ({
@@ -287,7 +290,7 @@ export default function EasyX() {
   );
 
   useEffect(() => {
-    console.log("USEEFFECT");
+    // console.log("USEEFFECT");
     const completelyTaken =
       taken.aOneA &&
       taken.aOneB &&
@@ -298,10 +301,10 @@ export default function EasyX() {
       taken.cTreA &&
       taken.cTreB &&
       taken.cTreC;
-    unlockedUE && console.log("ME");
-    unlockedUE && console.log(myPicks);
-    unlockedUE && console.log("taken");
-    unlockedUE && console.log(taken);
+    // unlockedUE && console.log("ME");
+    // unlockedUE && console.log(myPicks);
+    // unlockedUE && console.log("taken");
+    // unlockedUE && console.log(taken);
     unlockedUE && comThink && !finished && !completelyTaken && handleComThink();
   }, [
     unlockedUE,
@@ -320,9 +323,9 @@ export default function EasyX() {
     handleComThink,
   ]);
 
-  console.log(`My Win Stat: ${myWin}`);
-  console.log(`PC Win Stat: ${comWin}`);
-  console.log(`Finished: ${finished}`);
+  // console.log(`My Win Stat: ${myWin}`);
+  // console.log(`PC Win Stat: ${comWin}`);
+  // console.log(`Finished: ${finished}`);
   return (
     <div className="desktop-game-border-orange">
       {gameRow1}
