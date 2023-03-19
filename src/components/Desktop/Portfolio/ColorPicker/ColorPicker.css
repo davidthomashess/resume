@@ -25,6 +25,7 @@
 
 .desktop-input-row {
   border: 3px #777 solid;
+  width: 25px;
   border-radius: 3px;
   height: 17px;
   margin-top: 2px;
