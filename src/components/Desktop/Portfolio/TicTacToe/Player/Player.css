@@ -1,0 +1,127 @@
+.desktop-player {
+  width: 100%;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.desktop-x-choice {
+  display: inline-block;
+  border: 3px #bbb solid;
+  text-align: center;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  border-radius: 6px;
+  opacity: 0.35;
+  transition: opacity .2s;
+  margin-left: 2px;
+}
+
+.desktop-x-choice-disabled {
+  display: inline-block;
+  border: 3px #bbb solid;
+  text-align: center;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  border-radius: 6px;
+  opacity: 0.2;
+  margin-left: 2px;
+}
+
+.desktop-x-choice-picked {
+  display: inline-block;
+  border: 3px #bbb solid;
+  text-align: center;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  border-radius: 6px;
+  opacity: 1;
+  margin-left: 2px;
+}
+
+.desktop-x-choice:hover {
+  opacity: 1;
+  background-color: #ccc;
+  border: 3px #333 solid;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.desktop-o-choice {
+  display: inline-block;
+  border: 3px #bbb solid;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  margin-left: 8px;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.35;
+  transition: opacity .2s;
+  transition: background-color .2s;
+}
+
+.desktop-o-choice-disabled {
+  display: inline-block;
+  border: 3px #bbb solid;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  margin-left: 8px;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.2;
+}
+
+.desktop-o-choice-picked {
+  display: inline-block;
+  border: 3px #bbb solid;
+  height: 76px;
+  line-height: 79px;
+  width: 76px;
+  margin-left: 8px;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.desktop-o-choice:hover {
+  opacity: 1;
+  background-color: #ccc;
+  border: 3px #333 solid;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.desktop-player-xoCells {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  width: 76px;
+}
+
+.desktop-player-xoCells-disabled {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding: 0;
+  opacity: 0.5;
+  width: 76px;
+}
+
+.desktop-player-xoCells-picked {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding: 0;
+  opacity: 1;
+  width: 76px;
+}
+
+.desktop-player-xoCells:hover {
+  opacity: 1;
+  width: 76px;
+}
+
+.desktop-player-img {
+  height: 77px;
+}

@@ -1,0 +1,20 @@
+Variables
+  comPicks
+  myPicks
+  cells
+  timer
+  
+  gameRow1,2,3
+  
+functions
+  engine
+  myA1
+  clickA1
+  myA2
+  clickA2
+  
+// .______________.
+// |_a1_|_a2_|_a3_|
+// |_b1_|_b2_|_b3_|
+// |_c1_|_c2_|_c3_|
+// '¯¯¯¯¯¯¯¯¯¯¯¯¯¯'
