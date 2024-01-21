@@ -24,6 +24,17 @@
           "sub": "JSON",
           "b1": "Store and organize variables and objects",
           "b2": "Use JSON imports in React components and Cypress assertions"
+        },
+        "php": {
+          "sub": "PHP",
+          "b1": "Custom Drupal module development",
+          "b2": "Exclusive indexed arrays for consistancy"
+        },
+        "java": {
+          "sub": "Java",
+          "b1": "Follow SOLID & OOP best practices",
+          "b2": "Export and import classes",
+          "b3": "IDEs include Intellij and Eclipse"
         }
       },
       "shell": {

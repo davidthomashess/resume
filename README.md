@@ -20,7 +20,7 @@
       <li>Education</li>
       <li>Apps</li>
       <ol type="i">
-        <li>Calculator</li>
+        <del><li>Calculator</li></del>
         <li>Color Picker</li>
         <li>Tic-Tac-Toe</li>
       </ol>
