@@ -1,6 +1,7 @@
 import "./Education.css";
 import logoTamusa from "../../../img/SVG/tamusa-01.svg";
 import logoSAC from "../../../img/SVG/alamo-sac.svg";
+import React from "react";
 
 const Education = () => {
   return (

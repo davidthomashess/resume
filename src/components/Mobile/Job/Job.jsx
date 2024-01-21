@@ -1,100 +1,125 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import './Job.css'
+import "./Job.css";
 
-import logoAFS from '../../../img/SVG/accenture.svg'
-import logoRH from '../../../img/SVG/rh.svg'
+import logoMobomo from "../../../img/SVG/mobomo.svg";
+import logoAFS from "../../../img/SVG/accenture.svg";
 
 const Job = () => {
-  const [page, setPage] = useState()
-  
-  const active = 'active-tab-color-mobile workButton-mobile'
-  const inactive = 'inactive-tab-color-mobile workButton-mobile'
-  
-  const [afsActive, setAfsActive] = useState(inactive)
-  const [rhActive, setRhActive] = useState(inactive)
-  
+  const [page, setPage] = useState();
+
+  const active = "active-tab-color-mobile workButton-mobile";
+  const inactive = "inactive-tab-color-mobile workButton-mobile";
+
+  const [mobomoActive, setMobomoActive] = useState(inactive);
+  const [afsActive, setAfsActive] = useState(inactive);
+
   const options = {
+    mobomo: "mobomo",
     afs: "afs",
-    rh: "rh"
-  }
-  
+  };
+
   const activeSwitcher = (option) => {
-    setAfsActive(() => option === options.afs ? active : inactive)
-    setRhActive(() => option === options.rh ? active : inactive)
-  }
-  
-  const afs = () => {
-    activeSwitcher(options.afs)
+    setMobomoActive(() => (option === options.mobomo ? active : inactive));
+    setAfsActive(() => (option === options.afs ? active : inactive));
+  };
+
+  const mobomo = () => {
+    activeSwitcher(options.mobomo);
     setPage(
-      <div className="workMobile-work-card">
-        <div className="workMobile-logos">
-          <img 
-            src={logoAFS} 
-            alt="Accenture Federal Services logo" 
-            width="160px" 
+      <div className="mobile-work-card">
+        <div className="mobile-work-logos">
+          <img
+            src={logoMobomo}
+            alt="Robert Half logo"
+            width="160px"
             height="160px"
           />
         </div>
-        <div className="mobile-work-title">
-          <b>Accenture Federal Services</b>
+        <div className="workMobile-work-title">
+          <b>Mobomo, LLC</b>
           <br />
-          <b>San Antonio, TX - <i>(Present)</i></b>
-          <p className="mobile-work-text">React Automation Engineer</p>
-          <ul className="workMobile-ul-nobuff">
-            <li className="mobile-work-text">Write Cypress automation test scripts to speed up QA.</li>
-            <li className="mobile-work-text">Run test scripts to assert deployments.</li>
-            <li className="mobile-work-text">Write minor fixes to application in React.</li>
-          </ul>
+          <b>
+            Gaithersburg, MD - <i>2024</i>
+          </b>
         </div>
-        <div>
-          
+        <br />
+        <p className="mobile-work-text mobile-work-title">
+          Full Stack Developer
+        </p>
+        <div className="workMobile-justify-text">
+          <ul className="workMobile-ul-nobuff">
+            <li className="mobile-work-text">
+              Voice application development for Alexa.
+            </li>
+            <li className="mobile-work-text">
+              Combine custom PHP, React and NodeJS applications within AWS
+              services.
+            </li>
+          </ul>
+          <br />
         </div>
       </div>
-    )
-  }
-  
-  const rh = () => {
-    activeSwitcher(options.rh)
+    );
+  };
+
+  const afs = () => {
+    activeSwitcher(options.afs);
     setPage(
       <div className="mobile-work-card">
-        <div className="workMobile-logos">
-            <img 
-              src={logoRH} 
-              alt="Robert Half logo" 
-              width="160px" 
-              height="160px"
-            />
+        <div className="mobile-work-logos">
+          <img
+            src={logoAFS}
+            alt="Robert Half logo"
+            width="160px"
+            height="160px"
+          />
         </div>
         <div className="workMobile-work-title">
-          <b>Robert Half Technology</b>
+          <b>Accenture Federal Services</b>
           <br />
-          <b>San Antonio, Texas - <i>2017</i></b>
+          <b>
+            San Antonio, Texas - <i>2023</i>
+          </b>
         </div>
+        <br />
+        <p className="mobile-work-text mobile-work-title">
+          React Automation Engineer
+        </p>
         <div className="workMobile-justify-text">
-          <p className="mobile-work-text">System Technician - Temp</p>
           <ul className="workMobile-ul-nobuff">
-          <li className="mobile-work-text">Configure computer systems with system upgrades</li>
-          <li className="mobile-work-text">Disconnect, package and move workstations to new locations to setup for clients.</li>
+            <li className="mobile-work-text">
+              Write Cypress automation test scripts to speed up QA.
+            </li>
+            <li className="mobile-work-text">
+              Run test scripts to assert deployments.
+            </li>
+            <li className="mobile-work-text">
+              Write minor fixes to application in React.
+            </li>
           </ul>
         </div>
       </div>
-    )
-  }
-  
+    );
+  };
+
   return (
     <div className="mobile-work-body">
       <div className="workInnerContent-mobile">
         <div className="workInnerContentButtons-mobile">
           <div className="workButtons-rows-mobile">
-            <div className={afsActive} onClick={afs}>Accenture</div>
-            <div className={rhActive} onClick={rh}>Robert Half</div>
+            <div className={mobomoActive} onClick={mobomo}>
+              Mobomo
+            </div>
+            <div className={afsActive} onClick={afs}>
+              Accenture
+            </div>
           </div>
           {page}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Job
+export default Job;

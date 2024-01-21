@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Resume.css";
 
 import Header from "./Desktop/Header/Header";
@@ -34,6 +34,7 @@ import {
   ToggleEdu,
   ToggleJob,
 } from "../../types/resume";
+import React from "react";
 
 const { headers } = content;
 const { toggles } = content;
