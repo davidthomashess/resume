@@ -1,13 +1,13 @@
-.content-app {
+.desktop-content-app {
   margin-top: 4px;
   margin-bottom: 30px;
-  margin-left: 40px;
+  margin-left: 18%;
   width: 100vw;
   cursor: default;
 }
 
-.col {
-  padding-left: 10vw;
+.desktop-col {
+  padding-left: 0vw;
   width: 23.33vw;
   display: inline-block;
 }

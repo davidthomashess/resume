@@ -1,13 +1,11 @@
-.innerContent-mobile {
-  display: block;
+.skillInnerContent-mobile {
   padding-left: 0px;
   padding-right: 0px;
-  margin: 2px 10px 2px 3px;
+  margin: 2px 10px 2px 2px;
   white-space: nowrap;
 }
 
-.innerContentButtons-mobile {
-  display: inline-block;
+.skillInnerContentButtons-mobile {
   margin: 0;
   padding-left: 0px;
   padding-right: 0px;
@@ -16,25 +14,12 @@
   width: 100%
 }
 
-.inner-container-mobile {
-  color: #888;
-  white-space: normal;
-}
-
-.listSkillsItem-mobile {
-  padding-top: 0px;
-  border: none;
-}
-
-.skillButtons-rows-mobile {
-  width: 100%
-}
-
 .skillButton-mobile {
   display: inline-block;
   border: 2px #FFF solid;
   margin: 0;
-  padding-top: 20px;
+  line-height: 10px;
+  padding-top: 10px;
   background-color: none;
   background: none;
   color: #fff;
@@ -47,7 +32,16 @@
   
   cursor: pointer;
   width: 50%;
-  height: 39px;
+  height: 20px;
+}
+
+.skillButtons-rows-mobile {
+  width: 100%;
+}
+
+.skillInner-container-mobile {
+  color: #888;
+  white-space: normal;
 }
 
 .active-tab-color-mobile {

@@ -1,0 +1,191 @@
+.mobile-contains-colorPicker {
+  width: 200px;
+}
+
+.mobileColorDisplay {
+  width: 190px;
+  height: 145px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 4px;
+  margin-left: 0px;
+  margin-bottom: 28px;
+}
+
+.mobile-slidecontainer {
+  width: 190px;
+  display: block;
+}
+
+.mobile-rowItem {
+  vertical-align: middle;
+  height: 40px;
+  display: inline-block;
+  
+}
+
+.mobile-submitItem {
+  text-align: left;
+}
+
+.mobile-input-row {
+  border: 3px #777 solid;
+  border-radius: 3px;
+  width: 25px;
+  height: 17px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.mobile-input-row:hover {
+  border: 3px #222 solid;
+  border-radius: 3px;
+  height: 17px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.mobile-hex-io {
+  border: 3px #777 solid;
+  border-radius: 3px;
+  height: 17px;
+  width: 139px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mobile-hex-io:hover {
+  border: 3px #222 solid;
+  border-radius: 3px;
+  height: 17px;
+}
+
+.mobile-cp-button {
+  border: 3px #555 solid;
+  color: #555;
+  font-weight: bold;
+  background-color: #fff;
+  height: 25px;
+  width: 41px;
+  padding: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mobile-cp-button:hover {
+  border: 3px #222 solid;
+  color: #222;
+  font-weight: bold;
+  height: 25px;
+  width: 41px;
+  padding: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: linear-gradient(269deg, #ffebeb, #ecffe7, #e3fffe, #e3ffe5, #f1e3ff, #fff6e3);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.mobile-cp-button:active {
+  border: 3px #000 solid;
+  color: #000;
+  font-weight: bold;
+  height: 25px;
+  width: 41px;
+  padding: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: linear-gradient(317deg, #ff0000, #3aff00, #0098ff, #e3ff00, #8200ff, #ffab00, #ff0000, #c500ff, #00ff2b, #fffa00);
+    background-size: 2000% 2000%;
+
+    -webkit-animation: AnimationName 2s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.mobile-slider-red {
+  background-color: red;
+  
+}
+
+.mobile-slider-green {
+  background-color: green;
+}
+
+.mobile-slider-blue {
+  background-color: blue;
+}
+
+.mobile-rgb-align {
+  border: 4px red solid;
+  width: 30px;
+  padding-bottom: 20px;
+}
+
+.mobile-slider {
+  -webkit-appearance: none;
+  position: relative;
+  width: 147px;
+  height: 25px;
+  border-radius: 4px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.mobile-slider:hover {
+  opacity: 1;
+}
+
+.mobile-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  width: 20px;
+  height: 30px;
+  background: #000000;
+  cursor: pointer;
+}
+
+.mobile-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+

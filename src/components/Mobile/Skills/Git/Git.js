@@ -2,22 +2,25 @@ import React, { useState } from 'react'
 
 import './Git.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  git,
+  bitbucket,
+  github
+} = skills.global.skills.git
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-sub-skill-header-mobile">
+      <div className="inner-git-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-sub-skill-content-mobile">
+      <div className="inner-git-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
-          {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
         </ul>
       </div>
     </div>
@@ -35,14 +38,12 @@ const Git = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "Github",
+          `${bitbucket.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${bitbucket.b1}`,
+            `${bitbucket.b2}`,
+            `${bitbucket.b3}`,
+            `${bitbucket.b4}`
           ]
         )}
         
@@ -57,39 +58,15 @@ const Git = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "Commands",
+          `${github.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${github.b1}`,
+            `${github.b2}`,
+            `${github.b3}`,
+            `${github.b4}`
           ]
         )}
         
-        <div className="skill-button blocks" onClick={subSkill4}>{`>`}</div>
-      </div>
-    )
-  }
-  
-  const subSkill4 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
-          
-        {skillBuilder(
-          "Best Practices",
-          [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
-          ]
-        )}
-          
         <div className="skill-button disabled blocks" disabled>{`>`}</div>
       </div>
     )
@@ -101,11 +78,11 @@ const Git = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "Bitbucket",
+          `${git.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${git.b1}`,
+            `${git.b2}`,
+            `${git.b3}`
           ]
         )}
         

@@ -1,0 +1,71 @@
+.mobile-content-apps {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.appsMobile-beCenter {
+  text-align: center;
+}
+
+.appsMobile-col {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+}
+
+.appsMobile-blockCenter {
+  display: inline-block;
+  text-align: center;
+  width: 188px;
+}
+
+
+
+.appsInnerContentButtons-mobile {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px 6px 0px 2px;
+  white-space: nowrap;
+}
+
+.appsButtons-rows-mobile {
+  width: 100%
+}
+
+.appsButton-mobile {
+  display: inline-block;
+  border: 2px #FFF solid;
+  margin: 0;
+  padding-top: 20px;
+  background-color: none;
+  background: none;
+  color: #fff;
+  
+  font-family: 'Arial Bold',
+      Gadget, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  
+  cursor: pointer;
+  width: 100%;
+  height: 39px;
+}
+
+.active-tab-color-mobile {
+  background: #a4d4df;
+}
+
+.active, .active-tab-color-mobile:hover  {
+  background-color: #bce2eb;
+}
+
+.inactive-tab-color-mobile {
+  background: #888;
+}
+
+.active, .inactive-tab-color-mobile:hover  {
+  background-color: #aaa;
+}

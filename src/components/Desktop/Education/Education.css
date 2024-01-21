@@ -1,0 +1,39 @@
+.desktop-edu-body {
+  padding-top: 15px;
+  text-align: center;
+  height: 400px;
+}
+
+.desktop-edu-card {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.desktop-edu-logos {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.desktop-edu-px180 {
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-top: 8px;
+}
+
+.desktop-edu-text-group {
+  text-align: left;
+}
+
+.desktop-edu-text {
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+}
+
+.desktop-edu-title {
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+}

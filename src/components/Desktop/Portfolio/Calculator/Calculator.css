@@ -1,11 +1,11 @@
-.calculator-body {
+.desktop-calculator-body {
   border-radius: 30px;
   padding: 6px;
   width: 176px;
   background-color: #000;
 }
 
-.field { 
+.desktop-field { 
   text-align: right;
   color: #FFF;
   font-size: 40px;
@@ -14,12 +14,12 @@
   padding-top: 40px;
 }
 
-.row {
+.desktop-row {
   font-size: 20px;
   cursor: pointer;
 }
 
-.cell {
+.desktop-cell {
   margin: 2px;
   padding-top: 9px;
   text-align: center;
@@ -30,7 +30,7 @@
   border-radius: 50%
 }
 
-.cellx2 {
+.desktop-cellx2 {
   margin: 2px;
   padding-top: 10px;
   padding-left: 17px;
@@ -41,41 +41,41 @@
   border-radius: 20px;
 }
 
-.ability {
+.desktop-ability {
   background-color: #9f9f9f;
   color: #000;
 }
 
-.ability:hover {
+.desktop-ability:hover {
   background-color: #cfcfcf;
 }
 
-.ability:active {
+.desktop-ability:active {
   background-color: #dfdfdf;
 }
 
-.math {
+.desktop-math {
   background-color: #ff9900;
   color: #FFF;
 }
 
-.math:hover {
+.desktop-math:hover {
   background-color: #ffcc99;
 }
 
-.math:active {
+.desktop-math:active {
   background-color: #ffffcc;
 }
 
-.num { 
+.desktop-num { 
   background-color: #333333;
   color: #FFF;
 }
 
-.num:hover {
+.desktop-num:hover {
   background-color: #999;
 }
 
-.num:active {
+.desktop-num:active {
   background-color: #ccc;
 }

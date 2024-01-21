@@ -1,4 +1,27 @@
 body {
   height: 100vh;
   margin: 0;
+  /* overflow-y: hidden; /* Hide vertical scrollbar */
+  /* overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+.topHalf {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.topHalf::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }

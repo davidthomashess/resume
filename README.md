@@ -20,8 +20,8 @@
       <li><del>Education</del></li>
       <li>Apps</li>
       <ol type="i">
-        <li><del>Calculator</del></li>
-        <li><del>Color Picker</del></li>
+        <del><li>Calculator</li></del>
+        <li>Color Picker</li>
         <li>Tic-Tac-Toe</li>
       </ol>
       <li><del>Experience</del></li>
