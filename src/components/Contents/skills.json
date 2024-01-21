@@ -13,7 +13,8 @@
         "ts": {
           "sub": "TypeScript",
           "b1": "Type consts, components, props, & functions",
-          "b2": "Abstract types for optimal maintainability"
+          "b2": "Abstract types for optimal maintainability",
+          "b3": "Generics"
         },
         "bash": {
           "sub": "Bash",
@@ -24,6 +25,17 @@
           "sub": "JSON",
           "b1": "Store & organize; strings, numbers, booleans, arrays, & objects",
           "b2": "Import JSON key/value pairs for use in React components & Cypress assertions"
+        },
+        "php": {
+          "sub": "PHP",
+          "b1": "Custom Drupal module development",
+          "b2": "Exclusive indexed arrays for consistancy"
+        },
+        "java": {
+          "sub": "Java",
+          "b1": "Follow SOLID & OOP best practices",
+          "b2": "Export and import classes",
+          "b3": "IDEs include Intellij and Eclipse"
         }
       },
       "shell": {
