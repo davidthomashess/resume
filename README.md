@@ -21,8 +21,8 @@
       <li>Apps</li>
       <ol type="i">
         <del><li>Calculator</li></del>
-        <li>Color Picker</li>
-        <li>Tic-Tac-Toe</li>
+        <del><li>Color Picker</li></del>
+        <li>Game</li>
       </ol>
       <li><del>Experience</del></li>
     </ol>
