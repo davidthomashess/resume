@@ -2,7 +2,14 @@ import React, { useState } from 'react'
 
 import './Web.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  react,
+  css,
+  graphics,
+  dns
+} = skills.global.skills.web
 
 const skillBuilder = (title, skills) => {
   return (
@@ -16,8 +23,6 @@ const skillBuilder = (title, skills) => {
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
           {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
         </ul>
       </div>
     </div>
@@ -35,14 +40,12 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "Development",
+          `${css.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${css.b1}`,
+            `${css.b2}`,
+            `${css.b3}`,
+            `${css.b4}`
           ]
         )}
         
@@ -57,14 +60,12 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "Backend",
+          `${graphics.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${graphics.b1}`,
+            `${graphics.b2}`,
+            `${graphics.b3}`,
+            `${graphics.b4}`
           ]
         )}
         
@@ -79,40 +80,15 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          "DOM",
+          `${dns.sub}`,
           [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
+            `${dns.b1}`,
+            `${dns.b2}`,
+            `${dns.b3}`
           ]
         )}
           
-          <div className="skill-button blocks" onClick={subSkill5}>{`>`}</div>
-      </div>
-    )
-  }
-  
-  const subSkill5 = () => {
-    setCard(
-      <div>
-        <div className="skill-button blocks" onClick={subSkill4}>{`<`}</div>
-          
-        {skillBuilder(
-          "HTTPD",
-          [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
-          ]
-        )}
-          
-        <div className="skill-button disabled blocks" disabled>{`>`}</div>
+          <div className="skill-button disabled blocks" disabled>{`>`}</div>
       </div>
     )
   }
@@ -123,11 +99,13 @@ const Web = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "Design",
+          `${react.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${react.b1}`,
+            `${react.b2}`,
+            `${react.b3}`,
+            `${react.b4}`,
+            `${react.b5}`
           ]
         )}
         

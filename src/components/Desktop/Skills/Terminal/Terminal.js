@@ -1,65 +1,48 @@
 import './Terminal.css'
+import skills from '../../../Contents/skills.json'
+
+const {
+  linux,
+  batch,
+  ps
+} = skills.global.skills.shell
 
 const Terminal = () => {
   return <div className="container">
   <div className="inner-container">
       <div className="sub-skill-1">
         <div className="inner-sub-skill-1-header">
-          <h2>Terminal</h2>
+          <h2>{linux.sub}</h2>
         </div>
         <div className="inner-sub-skill-1-content">
           <ul>
-            <li>Details and more details</li>
-            <li>Some more details</li>
-            <li>And details again</li>
-            <li>D e t a i l s a n d m o r e d e t a </li>
-            <li>Some more details</li>
-            <li>And details again</li>
+            <li>{linux.b1}</li>
+            <li>{linux.b2}</li>
+            <li>{linux.b3}</li>
+            <li>{linux.b4}</li>
           </ul>
         </div>
       </div>
       <div className="sub-skill-2">
         <div className="inner-sub-skill-2-header">
-          <h2>Skill</h2>
+          <h2>{batch.sub}</h2>
         </div>
         <div className="inner-sub-skill-2-content">
           <ul>
-            <li>Details and more details</li>
-            <li>Some more details</li>
-            <li>And details again</li>
-            <li>D e t a i l s a n d m o r e d e t a </li>
-            <li>Some more details</li>
-            <li>And details again</li>
+            <li>{batch.b1}</li>
+            <li>{batch.b2}</li>
+            <li>{batch.b3}</li>
           </ul>
         </div>
       </div>
       <div className="sub-skill-3">
         <div className="inner-sub-skill-3-header">
-          <h2>Skill</h2>
+          <h2>{ps.sub}</h2>
         </div>
         <div className="inner-sub-skill-3-content">
           <ul>
-            <li>Details and more details</li>
-            <li>Some more details</li>
-            <li>And details again</li>
-            <li>D e t a i l s a n d m o r e d e t a </li>
-            <li>Some more details</li>
-            <li>And details again</li>
-          </ul>
-        </div>
-      </div>
-      <div className="sub-skill-4">
-        <div className="inner-sub-skill-4-header">
-          <h2>Skill</h2>
-        </div>
-        <div className="inner-sub-skill-4-content">
-          <ul>
-            <li>Details and more details</li>
-            <li>Some more details</li>
-            <li>And details again</li>
-            <li>D e t a i l s a n d m o r e d e t a </li>
-            <li>Some more details</li>
-            <li>And details again</li>
+            <li>{ps.b1}</li>
+            <li>{ps.b2}</li>
           </ul>
         </div>
       </div>

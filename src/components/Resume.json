@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "skill": "SKILLS",
+    "edu": "EDUCATION",
+    "app": "APPS",
+    "exp": "EXPERIENCE"
+  },
+  "toggles": {
+    "skill": "skill",
+    "edu": "edu",
+    "app": "port",
+    "exp": "job"
+  },
+  "window": {
+    "tablet": 1355,
+    "mobile": 720
+  }
+}

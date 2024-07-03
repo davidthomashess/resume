@@ -2,22 +2,27 @@ import React, { useState } from 'react'
 
 import './Databases.css'
 
-// const data = require('../../../Contents/skills.json')
+const skills = require('../../../Contents/skillsMobile.json')
+
+const {
+  sql,
+  nosql,
+  dba,
+  er
+} = skills.global.skills.data
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-sub-skill-header-mobile">
+      <div className="inner-databases-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-sub-skill-content-mobile">
+      <div className="inner-databases-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
           {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
-          {typeof skills[4] !== 'undefined' && <li>{skills[4]}</li>}
-          {typeof skills[5] !== 'undefined' && <li>{skills[5]}</li>}
         </ul>
       </div>
     </div>
@@ -35,14 +40,10 @@ const Databases = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          "Entity Relationship Diagrams",
+          `${nosql.sub}`,
           [
-            "a",
-            "b",
-            "c",
-            "e",
-            "f",
-            "deerclops"
+            `${nosql.b1}`,
+            `${nosql.b2}`
           ]
         )}
         
@@ -57,14 +58,11 @@ const Databases = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          "MongoDB",
+          `${dba.sub}`,
           [
-            "bearger",
-            "b",
-            "c",
-            "e",
-            "f",
-            "g"
+            `${dba.b1}`,
+            `${dba.b2}`,
+            `${dba.b3}`
           ]
         )}
         
@@ -79,14 +77,12 @@ const Databases = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          "DBA",
+          `${er.sub}`,
           [
-            "a",
-            "b",
-            "Klaus",
-            "e",
-            "f",
-            "g"
+            `${er.b1}`,
+            `${er.b2}`,
+            `${er.b3}`,
+            `${er.b4}`
           ]
         )}
           
@@ -101,11 +97,12 @@ const Databases = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          "SQL",
+          `${sql.sub}`,
           [
-            "Antlion",
-            "b",
-            "c"
+            `${sql.b1}`,
+            `${sql.b2}`,
+            `${sql.b3}`,
+            `${sql.b4}`
           ]
         )}
         

@@ -41,8 +41,9 @@
 }
 
 .inner-sub-skill-content-mobile {
-  width: 300px;
-  padding-left: 20px;
+  white-space: normal;
+  width: 230px;
+  padding-left: 5px;
   padding-right: 20px;
 }
 
