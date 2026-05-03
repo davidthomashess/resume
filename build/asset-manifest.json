@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27bed77f.css",
+    "main.js": "/static/js/main.dc4ea6f5.js",
+    "static/media/tamusa-01.svg": "/static/media/tamusa-01.9ed8420b1732f2f50fcf0a221ca9d898.svg",
+    "static/media/xo-symbols.svg": "/static/media/xo-symbols.84b7ee127c267a23e2f61f54e3a398af.svg",
+    "static/media/mobomo.svg": "/static/media/mobomo.2fa1212ab0aaa2fe449996989215e86e.svg",
+    "static/media/alamo-sac.svg": "/static/media/alamo-sac.98537fd66b04e3ae8649b48bb0ac3bd2.svg",
+    "static/media/rh.svg": "/static/media/rh.16f106320fad65732757234291bdac9a.svg",
+    "static/media/btn-x-xo-symbols.svg": "/static/media/btn-x-xo-symbols.88ae3e57e3bdeaaccc8c3483d86223a3.svg",
+    "static/media/logo-circle.svg": "/static/media/logo-circle.381617b298963f6d3861d1c80a9237f8.svg",
+    "static/media/btn-o-xo-symbols.svg": "/static/media/btn-o-xo-symbols.c90c335360f0c17488913d8bcb6efa3d.svg",
+    "index.html": "/index.html",
+    "static/media/accenture.svg": "/static/media/accenture.ebba880d871fee456f44da4b9a024282.svg",
+    "main.27bed77f.css.map": "/static/css/main.27bed77f.css.map",
+    "main.dc4ea6f5.js.map": "/static/js/main.dc4ea6f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27bed77f.css",
+    "static/js/main.dc4ea6f5.js"
+  ]
+}
