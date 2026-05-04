@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import './Testing.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
   cypress,

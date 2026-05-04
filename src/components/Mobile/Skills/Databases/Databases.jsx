@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
-import './Code.css'
+import './Databases.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
-  js,
-  ts,
-  bash,
-  json
-} = skills.global.skills.code
+  sql,
+  nosql,
+  dba,
+  er
+} = skills.global.skills.data
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-code-skill-header-mobile">
+      <div className="inner-databases-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-code-skill-content-mobile">
+      <div className="inner-databases-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
@@ -29,9 +29,9 @@ const skillBuilder = (title, skills) => {
   )
 }
 
-const Code = () => {
+const Databases = () => {
   const subSkill1 = () => {
-    setCard(firstSkill)
+    setCard(firstSkill())
   }
   
   const subSkill2 = () => {
@@ -40,10 +40,10 @@ const Code = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          `${ts.sub}`,
+          `${nosql.sub}`,
           [
-            `${ts.b1}`,
-            `${ts.b2}`
+            `${nosql.b1}`,
+            `${nosql.b2}`
           ]
         )}
         
@@ -58,10 +58,11 @@ const Code = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          `${bash.sub}`,
+          `${dba.sub}`,
           [
-            `${bash.b1}`,
-            `${bash.b2}`
+            `${dba.b1}`,
+            `${dba.b2}`,
+            `${dba.b3}`
           ]
         )}
         
@@ -76,10 +77,12 @@ const Code = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          `${json.sub}`,
+          `${er.sub}`,
           [
-            `${json.b1}`,
-            `${json.b2}`
+            `${er.b1}`,
+            `${er.b2}`,
+            `${er.b3}`,
+            `${er.b4}`
           ]
         )}
           
@@ -94,12 +97,12 @@ const Code = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          `${js.sub}`,
+          `${sql.sub}`,
           [
-            `${js.b1}`,
-            `${js.b2}`,
-            `${js.b3}`,
-            `${js.b4}`
+            `${sql.b1}`,
+            `${sql.b2}`,
+            `${sql.b3}`,
+            `${sql.b4}`
           ]
         )}
         
@@ -119,4 +122,4 @@ const Code = () => {
   )
 }
 
-export default Code
+export default Databases

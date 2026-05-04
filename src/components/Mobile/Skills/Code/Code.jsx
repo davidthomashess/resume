@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
-import './Admin.css'
+import './Code.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
-  oc,
-  prisma,
-  docker,
-  yaml
-} = skills.global.skills.admin
+  js,
+  ts,
+  bash,
+  json
+} = skills.global.skills.code
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-admin-skill-header-mobile">
+      <div className="inner-code-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-admin-skill-content-mobile">
+      <div className="inner-code-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
@@ -29,9 +29,9 @@ const skillBuilder = (title, skills) => {
   )
 }
 
-const Admin = () => {
+const Code = () => {
   const subSkill1 = () => {
-    setCard(firstSkill())
+    setCard(firstSkill)
   }
   
   const subSkill2 = () => {
@@ -40,11 +40,10 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          `${oc.sub}`,
+          `${ts.sub}`,
           [
-            `${oc.b1}`,
-            `${oc.b2}`,
-            `${oc.b3}`
+            `${ts.b1}`,
+            `${ts.b2}`
           ]
         )}
         
@@ -59,10 +58,10 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          `${prisma.sub}`,
+          `${bash.sub}`,
           [
-            `${prisma.b1}`,
-            `${prisma.b2}`
+            `${bash.b1}`,
+            `${bash.b2}`
           ]
         )}
         
@@ -77,9 +76,10 @@ const Admin = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          `${docker.sub}`,
+          `${json.sub}`,
           [
-            `${docker.b1}`
+            `${json.b1}`,
+            `${json.b2}`
           ]
         )}
           
@@ -87,17 +87,19 @@ const Admin = () => {
       </div>
     )
   }
-  
+
   const firstSkill = () => {
     return (
       <div>
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          `${yaml.sub}`,
+          `${js.sub}`,
           [
-            `${yaml.b1}`,
-            `${yaml.b2}`
+            `${js.b1}`,
+            `${js.b2}`,
+            `${js.b3}`,
+            `${js.b4}`
           ]
         )}
         
@@ -117,4 +119,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+export default Code

@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 
-import './Terminal.css'
+import './Web.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
-  linux,
-  batch,
-  ps
-} = skills.global.skills.shell
+  react,
+  css,
+  graphics,
+  dns
+} = skills.global.skills.web
 
 const skillBuilder = (title, skills) => {
   return (
@@ -21,13 +22,14 @@ const skillBuilder = (title, skills) => {
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
           {typeof skills[2] !== 'undefined' && <li>{skills[2]}</li>}
+          {typeof skills[3] !== 'undefined' && <li>{skills[3]}</li>}
         </ul>
       </div>
     </div>
   )
 }
 
-const Terminal = () => {
+const Web = () => {
   const subSkill1 = () => {
     setCard(firstSkill())
   }
@@ -38,11 +40,12 @@ const Terminal = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          `${batch.sub}`,
+          `${css.sub}`,
           [
-            `${batch.b1}`,
-            `${batch.b2}`,
-            `${batch.b3}`
+            `${css.b1}`,
+            `${css.b2}`,
+            `${css.b3}`,
+            `${css.b4}`
           ]
         )}
         
@@ -57,14 +60,35 @@ const Terminal = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          `${ps.sub}`,
+          `${graphics.sub}`,
           [
-            `${ps.b1}`,
-            `${ps.b2}`
+            `${graphics.b1}`,
+            `${graphics.b2}`,
+            `${graphics.b3}`,
+            `${graphics.b4}`
           ]
         )}
         
-        <div className="skill-button disabled blocks" disabled>{`>`}</div>
+        <div className="skill-button blocks" onClick={subSkill4}>{`>`}</div>
+      </div>
+    )
+  }
+  
+  const subSkill4 = () => {
+    setCard(
+      <div>
+        <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
+          
+        {skillBuilder(
+          `${dns.sub}`,
+          [
+            `${dns.b1}`,
+            `${dns.b2}`,
+            `${dns.b3}`
+          ]
+        )}
+          
+          <div className="skill-button disabled blocks" disabled>{`>`}</div>
       </div>
     )
   }
@@ -75,12 +99,13 @@ const Terminal = () => {
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          `${linux.sub}`,
+          `${react.sub}`,
           [
-            `${linux.b1}`,
-            `${linux.b2}`,
-            `${linux.b3}`,
-            `${linux.b4}`
+            `${react.b1}`,
+            `${react.b2}`,
+            `${react.b3}`,
+            `${react.b4}`,
+            `${react.b5}`
           ]
         )}
         
@@ -89,7 +114,7 @@ const Terminal = () => {
     )
   }
   
-  const [card, setCard] = useState(firstSkill())
+  const [card, setCard] = useState(firstSkill)
   
   return (
   <div className="container-mobile">
@@ -100,4 +125,4 @@ const Terminal = () => {
   )
 }
 
-export default Terminal
+export default Web

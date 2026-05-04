@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
-import './Web.css'
+import './Admin.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
-  react,
-  css,
-  graphics,
-  dns
-} = skills.global.skills.web
+  oc,
+  prisma,
+  docker,
+  yaml
+} = skills.global.skills.admin
 
 const skillBuilder = (title, skills) => {
   return (
     <div className="sub-skill-mobile blocks">
-      <div className="inner-sub-skill-header-mobile">
+      <div className="inner-admin-skill-header-mobile">
         <h2>{title}</h2>
       </div>
-      <div className="inner-sub-skill-content-mobile">
+      <div className="inner-admin-skill-content-mobile">
         <ul>
           {typeof skills[0] !== 'undefined' && <li>{skills[0]}</li>}
           {typeof skills[1] !== 'undefined' && <li>{skills[1]}</li>}
@@ -29,7 +29,7 @@ const skillBuilder = (title, skills) => {
   )
 }
 
-const Web = () => {
+const Admin = () => {
   const subSkill1 = () => {
     setCard(firstSkill())
   }
@@ -40,12 +40,11 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill1}>{`<`}</div>
         
         {skillBuilder(
-          `${css.sub}`,
+          `${oc.sub}`,
           [
-            `${css.b1}`,
-            `${css.b2}`,
-            `${css.b3}`,
-            `${css.b4}`
+            `${oc.b1}`,
+            `${oc.b2}`,
+            `${oc.b3}`
           ]
         )}
         
@@ -60,12 +59,10 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill2}>{`<`}</div>
         
         {skillBuilder(
-          `${graphics.sub}`,
+          `${prisma.sub}`,
           [
-            `${graphics.b1}`,
-            `${graphics.b2}`,
-            `${graphics.b3}`,
-            `${graphics.b4}`
+            `${prisma.b1}`,
+            `${prisma.b2}`
           ]
         )}
         
@@ -80,32 +77,27 @@ const Web = () => {
         <div className="skill-button blocks" onClick={subSkill3}>{`<`}</div>
           
         {skillBuilder(
-          `${dns.sub}`,
+          `${docker.sub}`,
           [
-            `${dns.b1}`,
-            `${dns.b2}`,
-            `${dns.b3}`
+            `${docker.b1}`
           ]
         )}
           
-          <div className="skill-button disabled blocks" disabled>{`>`}</div>
+        <div className="skill-button disabled blocks" disabled>{`>`}</div>
       </div>
     )
   }
-
+  
   const firstSkill = () => {
     return (
       <div>
         <div className="skill-button disabled blocks" disabled>{`<`}</div>
         
         {skillBuilder(
-          `${react.sub}`,
+          `${yaml.sub}`,
           [
-            `${react.b1}`,
-            `${react.b2}`,
-            `${react.b3}`,
-            `${react.b4}`,
-            `${react.b5}`
+            `${yaml.b1}`,
+            `${yaml.b2}`
           ]
         )}
         
@@ -114,7 +106,7 @@ const Web = () => {
     )
   }
   
-  const [card, setCard] = useState(firstSkill)
+  const [card, setCard] = useState(firstSkill())
   
   return (
   <div className="container-mobile">
@@ -125,4 +117,4 @@ const Web = () => {
   )
 }
 
-export default Web
+export default Admin
