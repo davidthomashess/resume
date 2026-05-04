@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import './Git.css'
 
-const skills = require('../../../Contents/skillsMobile.json')
+import skills from '../../../Contents/skillsMobile.json'
 
 const {
   git,
